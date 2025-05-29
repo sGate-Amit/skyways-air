@@ -1044,7 +1044,7 @@ blockquote cite{
 
 .header-style02 #top-bar-wrapper{
     background-color: #fcfcfc;
-    padding: 10px 0;
+    /*padding: 10px 0;*/
     width: 100%;
 }
 
@@ -1115,7 +1115,7 @@ blockquote cite{
 }
 
 .header-style02 .header-inner{
-    padding: 20px 0;
+   /* padding: 20px 0;*/
 }
 
 .header-style02 .header-inner .main-nav{
