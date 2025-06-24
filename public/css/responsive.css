@@ -163,9 +163,9 @@ Responsive template styles
 }
 
 /* Hide the inner submenus */
-.dl-menuwrapper li .dl-submenu {
+/***.dl-menuwrapper li .dl-submenu {
     display: none;
-}
+}**/
 
 /* 
 When a submenu is openend, we will hide all li siblings.
