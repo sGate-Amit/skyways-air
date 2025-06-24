@@ -5343,3 +5343,9 @@ ul.blog-posts > li{
 .columns-3 .blocks-gallery-item { width: 33.3%; }
 .columns-4 .blocks-gallery-item { width: 25%; }
 .columns-5 .blocks-gallery-item { width: 20%; }
+
+@media only screen and (max-width: 600px){
+    .service-icon-left .icon-container i{
+        text-align : start;
+    }
+}
