@@ -184,8 +184,8 @@ form.submitting .wpcf7-spinner {
 	font-weight: 800 !important;
 	color: #fff;
 	margin: 0 0 0px;
-	text-shadow: 0 0 6px #000;
-	background: #11111147;
+	text-shadow: 0 1px 3px #000;
+	/* background: #11111147; */
 	display: inline-block;
 	padding: 17px 13px 23px;
 }
