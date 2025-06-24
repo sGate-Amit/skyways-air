@@ -483,7 +483,7 @@ document.addEventListener("DOMContentLoaded", function() {
           currentDropdown.classList.remove("open");
         } else {
           // Close all dropdowns
-          document.querySelectorAll(".dl-submenu, .backsingle").forEach(function(drop) {
+          document.querySelectorAll(".dl-submenu").forEach(function(drop) {
             drop.classList.remove("open");
           });
           // Open this one
