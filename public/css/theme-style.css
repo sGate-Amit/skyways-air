@@ -2915,6 +2915,8 @@ q{
     ------------------------------------------------------------------------- */
 .service-icon-left{
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .service-icon-left .icon-container{
