@@ -5349,5 +5349,5 @@ ul.blog-posts > li{
         text-align : start;
     }
 	.service-icon-left .service-details{
-		padding-left: 10px;
+		padding-left: 10px!important;
 }
