@@ -184,9 +184,11 @@ form.submitting .wpcf7-spinner {
 	font-weight: 800 !important;
 	color: #fff;
 	margin: 0 0 0px;
-	line-height: 69px;
+	text-shadow: 0 0 6px #000;
+	background: #11111147;
+	display: inline-block;
+	padding: 17px 13px 23px;
 }
-
 .vdeeoText {
 	margin: 0 auto;
 	text-align: center;
