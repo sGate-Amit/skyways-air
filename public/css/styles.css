@@ -206,6 +206,26 @@ form.submitting .wpcf7-spinner {
 	margin: 0 auto;
 }
 
+
+.dl-menuwrapper:hover ul {
+    opacity: 1 !important;
+}
+
+.dl-menuwrapper ul li:hover .dl-submenu {
+    display: block !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:1024px) {
 .vdeeoText h2 {font-size: 49px;}
 
