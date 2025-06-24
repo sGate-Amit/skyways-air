@@ -207,16 +207,6 @@ form.submitting .wpcf7-spinner {
 }
 
 
-.dl-menuwrapper:hover ul {
-	opacity: 1 !important;
-	z-index: 999999;
-	top: 47px !important;
-	transform: initial !important;
-}
-
-.dl-menuwrapper ul li:hover .dl-submenu {
-    display: block !important;
-}
 
 
 
@@ -234,6 +224,24 @@ form.submitting .wpcf7-spinner {
 
 }
 @media (max-width:767px) {
+
+
+.dl-menuwrapper:hover ul {
+	opacity: 1 !important;
+	z-index: 999999;backface-visibility: initial !important;
+	top: 47px !important;
+	transform: initial !important;
+}
+
+.dl-menuwrapper ul li:hover .dl-submenu {
+    display: block !important;
+}
+
+
+
+
+
+	
 .image-background {
 	height: 200px !important;
 }
