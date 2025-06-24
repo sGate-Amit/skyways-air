@@ -2943,7 +2943,8 @@ q{
 }
 
 .service-icon-left .service-details{
-    padding-left: 120px;
+    padding-left: 30px;
+    display: flex;
 }
 
 .service-icon-left .service-details h1,
