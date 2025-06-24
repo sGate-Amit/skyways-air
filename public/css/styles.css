@@ -192,6 +192,25 @@ form.submitting .wpcf7-spinner {
   text-transform: uppercase;
 }
 
+.vdeeoText {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.vdeeoTextMain {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 2;
+	right: 0;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	margin: 0 auto;
+}
+
+
+
 @media (max-width:767px) {
 .vdeeoTextMain {top: 40px;}
 .vdeeoText h2 {font-size: 32px; line-height: 39px;}
