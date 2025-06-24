@@ -206,7 +206,9 @@ form.submitting .wpcf7-spinner {
 	margin: 0 auto;
 }
 
-
+.margin00 {
+	margin: 0px !important;
+}
 
 
 
