@@ -173,10 +173,11 @@ form.submitting .wpcf7-spinner {
   width: 100%;
 }
 .vdeeoTextMain {
-  position: absolute;
-  top: 170px;
-  left: 0;
-  z-index: 2;
+	position: absolute;
+	top: 170px;
+	left: 0;
+	z-index: 2;
+	right: 0;
 }
 .vdeeoText h2 {
   font-size: 70px;
