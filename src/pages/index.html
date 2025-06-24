@@ -426,36 +426,37 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-
-
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  const menuItems = document.querySelectorAll(".menu_main ul li");
+  const menuItems = document.querySelectorAll(".menu_main > ul > li");
 
   menuItems.forEach(function(item) {
     item.addEventListener("click", function(e) {
-      e.stopPropagation(); // prevent bubbling if needed
+      e.stopPropagation(); // Prevent bubbling
 
-      const currentDropdown = this.querySelector(".dropdown");
+      const currentDropdown = this.querySelector(".dl-submenu");
 
-      document.querySelectorAll("li > .dl-submenu").forEach(function(dropdown) {
-        if (dropdown !== currentDropdown) {
-          dropdown.style.display = "none";
-        }
+      // Close all dropdowns first
+      document.querySelectorAll(".dropdown").forEach(function(drop) {
+        drop.classList.remove("open");
       });
 
+      // Open this one (if it exists)
       if (currentDropdown) {
-        // Toggle current
-        if (currentDropdown.style.display === "block") {
-          currentDropdown.style.display = "none";
-        } else {
-          currentDropdown.style.display = "block";
-        }
+        currentDropdown.classList.add("open");
       }
+    });
+  });
+
+  // Optional: close all dropdowns if click outside
+  document.addEventListener("click", function() {
+    document.querySelectorAll(".dropdown").forEach(function(drop) {
+      drop.classList.remove("open");
     });
   });
 });
 </script>
+
 
 
 
