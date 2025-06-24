@@ -208,7 +208,10 @@ form.submitting .wpcf7-spinner {
 
 
 .dl-menuwrapper:hover ul {
-    opacity: 1 !important;
+	opacity: 1 !important;
+	z-index: 999999;
+	top: 47px !important;
+	transform: initial !important;
 }
 
 .dl-menuwrapper ul li:hover .dl-submenu {
