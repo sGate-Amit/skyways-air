@@ -186,11 +186,6 @@ form.submitting .wpcf7-spinner {
 	margin: 0 0 0px;
 	line-height: 69px;
 }
-.vdeeoText h2 span {
-  font-size: 33px;
-  color: #fff;
-  text-transform: uppercase;
-}
 
 .vdeeoText {
 	margin: 0 auto;
@@ -214,7 +209,7 @@ form.submitting .wpcf7-spinner {
 @media (max-width:767px) {
 
 .vdeeoText h2 {font-size: 32px; line-height: 39px;}
-.vdeeoText h2 span {font-size: 19px;}
+
 
 }
 
