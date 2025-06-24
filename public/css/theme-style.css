@@ -2919,8 +2919,8 @@ q{
 
 .service-icon-left .icon-container{
     float: left;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     background-color: #fff;
 
     border: 2px solid #ddd;
@@ -2952,12 +2952,12 @@ q{
 }
 
 .service-icon-left .icon-container i{
-    font-size: 60px;
+    font-size: 20px;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
 }
 
 /*
