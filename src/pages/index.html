@@ -418,7 +418,7 @@
                                                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1436">
                                                          <a href="javascript:void(0)">Financial Results</a>
                                                          <ul class="dl-submenusub">
-								 
+								  <div class="backmenu"><h3 class="backdouble">Back</h3> <h5>Investors</h5></div>
                                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1445"><a href="/board-report/">Board Report</a></li>
                                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1444"><a href="/balance-sheet/">Balance Sheet</a></li>
                                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1443"><a href="/form-aoc-4/">Form AOC-4</a></li>
@@ -466,41 +466,95 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // MAIN MENU ITEMS
+  const mainMenuItems = document.querySelectorAll(".menu_main > ul > li");
 
-	<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const menuItems = document.querySelectorAll(".menu_main > ul > li");
+  mainMenuItems.forEach(function (item) {
+    item.addEventListener("click", function (e) {
+      e.stopPropagation();
 
-  menuItems.forEach(function(item) {
-    item.addEventListener("click", function(e) {
-      e.stopPropagation(); // Prevent bubbling
+      const dropdown = this.querySelector(".dl-submenu");
+      if (!dropdown) return;
 
-      const currentDropdown = this.querySelector(".dl-submenu");
+      const isOpen = dropdown.style.display === "block";
 
-      if (currentDropdown) {
-        if (currentDropdown.classList.contains("open")) {
-          // If already open, close it
-          currentDropdown.classList.remove("open");
-        } else {
-          // Close all dropdowns
-          document.querySelectorAll(".dl-submenu").forEach(function(drop) {
-            drop.classList.remove("open");
-          });
-          // Open this one
-          currentDropdown.classList.add("open");
-        }
+      // Close all other submenus
+      document.querySelectorAll(".menu_main > ul > li .dl-submenu").forEach(function (dd) {
+        dd.style.display = "none";
+      });
+
+      if (!isOpen) {
+        dropdown.style.display = "block";
       }
     });
   });
 
-  // Optional: click outside closes all dropdowns
-  document.addEventListener("click", function() {
-    document.querySelectorAll(".dropdown").forEach(function(drop) {
-      drop.classList.remove("open");
+  // SUB-MENU ITEMS (2nd level)
+  const subMenuItems = document.querySelectorAll(".menu_main > ul > li > ul > li");
+
+  subMenuItems.forEach(function (item) {
+    item.addEventListener("click", function (e) {
+      e.stopPropagation();
+
+      const dropdown = this.querySelector(".dl-submenusub");
+      if (!dropdown) return;
+
+      const isOpen = dropdown.style.display === "block";
+
+      // Close all other sub-submenus
+      document.querySelectorAll(".menu_main > ul > li > ul > li .dl-submenusub").forEach(function (dd) {
+        dd.style.display = "none";
+      });
+
+      if (!isOpen) {
+        dropdown.style.display = "block";
+      }
+    });
+  });
+
+  // Prevent closing when clicking inside submenus
+  document.querySelectorAll(".menu_main .dl-submenu, .menu_main .dl-submenusub").forEach(function (submenu) {
+    submenu.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+  });
+
+  // Clicking anywhere else closes all submenus + sub-submenus
+  document.addEventListener("click", function () {
+    document.querySelectorAll(".menu_main .dl-submenu, .menu_main .dl-submenusub").forEach(function (dd) {
+      dd.style.display = "none";
+    });
+  });
+
+  // .backsingle closes its parent .dl-submenu
+  document.querySelectorAll(".menu_main .backsingle").forEach(function (backItem) {
+    backItem.addEventListener("click", function (e) {
+      e.stopPropagation();
+      const parentSubmenu = this.closest(".dl-submenu");
+      if (parentSubmenu) {
+        parentSubmenu.style.display = "none";
+      }
+    });
+  });
+
+  // .backdouble closes its parent .dl-submenusub
+  document.querySelectorAll(".menu_main .backdouble").forEach(function (backItem) {
+    backItem.addEventListener("click", function (e) {
+      e.stopPropagation();
+      const parentSubmenu = this.closest(".dl-submenusub");
+      if (parentSubmenu) {
+        parentSubmenu.style.display = "none";
+      }
     });
   });
 });
 </script>
+
+
+
+
 
 
 
