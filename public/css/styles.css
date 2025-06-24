@@ -180,11 +180,11 @@ form.submitting .wpcf7-spinner {
 	right: 0;
 }
 .vdeeoText h2 {
-  font-size: 70px;
-  font-weight: bold;
-  color: #fff;
-  margin: 0 0 0px;
-  line-height: 69px;
+	font-size: 70px;
+	font-weight: 800 !important;
+	color: #fff;
+	margin: 0 0 0px;
+	line-height: 69px;
 }
 .vdeeoText h2 span {
   font-size: 33px;
