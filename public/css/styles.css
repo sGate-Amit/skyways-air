@@ -234,7 +234,8 @@ form.submitting .wpcf7-spinner {
 }
 
 
-
+.menu_b {display: none;
+}
 
 
 
@@ -245,7 +246,8 @@ form.submitting .wpcf7-spinner {
 }
 @media (max-width:767px) {
 
-
+.menu_b {display: block;
+}
 .dl-menuwrapper:hover ul {
 	opacity: 1 !important;
 	z-index: 999999;backface-visibility: initial !important;
