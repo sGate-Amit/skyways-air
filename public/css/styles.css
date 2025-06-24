@@ -157,3 +157,43 @@ form.submitting .wpcf7-spinner {
 .wpcf7 input[type="tel"] {
 	direction: ltr;
 }
+
+
+
+
+/*********** video section *********/
+
+
+.pagevideoMain {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+.videoBox video {
+  width: 100%;
+}
+.vdeeoTextMain {
+  position: absolute;
+  top: 170px;
+  left: 0;
+  z-index: 2;
+}
+.vdeeoText h2 {
+  font-size: 70px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0 0 0px;
+  line-height: 69px;
+}
+.vdeeoText h2 span {
+  font-size: 33px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
