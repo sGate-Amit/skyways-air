@@ -430,7 +430,34 @@ function closeNav() {
 </script>
 
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const menuItems = document.querySelectorAll(".menu_main ul li");
 
+  menuItems.forEach(function(item) {
+    item.addEventListener("click", function(e) {
+      e.stopPropagation(); // prevent bubbling if needed
+
+      const currentDropdown = this.querySelector(".dropdown");
+
+      document.querySelectorAll("li > .dl-submenu").forEach(function(dropdown) {
+        if (dropdown !== currentDropdown) {
+          dropdown.style.display = "none";
+        }
+      });
+
+      if (currentDropdown) {
+        // Toggle current
+        if (currentDropdown.style.display === "block") {
+          currentDropdown.style.display = "none";
+        } else {
+          currentDropdown.style.display = "block";
+        }
+      }
+    });
+  });
+});
+</script>
 
 
 
