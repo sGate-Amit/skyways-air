@@ -224,9 +224,6 @@ body {
     margin-bottom: 80px;
 }
 
-.page-id-18 .page-content .row{
-    margin-bottom: 10px!important;
-}
 .page-content .row div[class^="col-md-"] .cma-wysiwyg-editor{
     overflow: hidden;
 }
