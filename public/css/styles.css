@@ -217,7 +217,7 @@ form.submitting .wpcf7-spinner {
 	left: 0;
 	right: 0;
 	background: #000;
-	padding: 19px;
+	padding: 19px !important;
 	bottom: 0;
 }
 
@@ -229,7 +229,7 @@ form.submitting .wpcf7-spinner {
 	left: 0;
 	right: 0;
 	background: #000;
-	padding: 19px;
+	padding: 19px !important;
 	bottom: 0;
 }
 
