@@ -5348,4 +5348,6 @@ ul.blog-posts > li{
     .service-icon-left .icon-container i{
         text-align : start;
     }
+	.service-icon-left .service-details{
+		padding-left: 10px;
 }
