@@ -194,7 +194,7 @@ form.submitting .wpcf7-spinner {
 
 @media (max-width:767px) {
 .vdeeoTextMain {top: 40px;}
-.vdeeoText h2 {font-size: 30px;}
+.vdeeoText h2 {font-size: 32px; line-height: 39px;}
 .vdeeoText h2 span {font-size: 19px;}
 
 }
