@@ -52,11 +52,15 @@
 @media only screen and (min-width: 320px) and (max-width: 479px){
     .page-content.image-background{
         background-size: 100% !important;
+        
     }
     
     *[class^="col-"].empty.image-background{
         margin-bottom: 0;
     }
+    .image-background {
+	height: auto !important;
+}
 }
 
 
@@ -68,6 +72,9 @@
     *[class^="col-"].empty.image-background{
         margin-bottom: 0;
     }
+    .image-background {
+	height: auto !important;
+}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
