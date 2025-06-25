@@ -249,7 +249,9 @@ form.submitting .wpcf7-spinner {
 	justify-content: space-between;
 }
 
-
+.backmenu h3 {
+	cursor: pointer;
+}
 
 
 
