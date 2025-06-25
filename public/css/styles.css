@@ -259,6 +259,11 @@ form.submitting .wpcf7-spinner {
 }
 @media (max-width:767px) {
 
+.menu_b {
+	
+	top: 34px !important;
+}
+	
 .menu_b {display: block!important;
 }
 .dl-menuwrapper:hover ul {
