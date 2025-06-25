@@ -5360,6 +5360,9 @@ ul.blog-posts > li{
 .profileDirector p{
     text-align: justify;
 }
+.director-para{
+    text-align: justify;
+}
 .profileDirector img{
    border: 2px solid #fac312;
    border-radius: 5px;
