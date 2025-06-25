@@ -359,7 +359,7 @@ form.submitting .wpcf7-spinner {
 }
 .backmenu h3 {
   margin: 0px;
-  color: #fff;
+  color: #fff !important;
 }
 .backmenu h5 {
   margin: 0px;
