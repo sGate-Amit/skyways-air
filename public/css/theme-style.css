@@ -5345,7 +5345,12 @@ ul.blog-posts > li{
 .columns-3 .blocks-gallery-item { width: 33.3%; }
 .columns-4 .blocks-gallery-item { width: 25%; }
 .columns-5 .blocks-gallery-item { width: 20%; }
-
+.profileDirector{margin-top: 50px; display: flex;flex-wrap: wrap;justify-content: space-between;}
+.profileDirector1{width: 60%;}
+.profileDirector2{width: 38%}
+.profileDirector p{
+    text-align: justify;
+}
 @media only screen and (max-width: 600px){
     .service-icon-left .icon-container i{
         text-align : start;
