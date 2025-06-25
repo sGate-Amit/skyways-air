@@ -5367,6 +5367,9 @@ ul.blog-posts > li{
    border: 2px solid #fac312;
    border-radius: 5px;
 }
+.pt-title {
+    background: gray;
+}
 @media only screen and (max-width: 600px){
     .service-icon-left .icon-container i{
         text-align : start;
