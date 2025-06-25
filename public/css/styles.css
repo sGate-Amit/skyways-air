@@ -243,6 +243,15 @@ form.submitting .wpcf7-spinner {
 	cursor: pointer;
 }
 
+.navbar.navbar-default.nav-left.pi-mega {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
+
 
 @media (max-width:1024px) {
 .vdeeoText h2 {font-size: 49px !important;}
