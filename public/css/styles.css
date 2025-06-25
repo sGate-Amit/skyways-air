@@ -377,7 +377,7 @@ form.submitting .wpcf7-spinner {
 	border-radius: 0 0 10px 10px;
 }
 
-.dl-submenu li:first {
+.dl-submenu li:first-child {
 	padding-bottom: 14px;
 	border-radius:  10px 10px 0 0;
 }
