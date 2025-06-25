@@ -180,9 +180,9 @@ form.submitting .wpcf7-spinner {
 	right: 0;
 }
 .vdeeoText h2 {
-	font-size: 70px;
+	font-size: 70px !important;
 	font-weight: 800 !important;
-	color: #fff;
+	color: #fff !important;
 	margin: 0 0 0px;
 	text-shadow: 0 1px 3px #000;
 	/* background: #11111147; */
