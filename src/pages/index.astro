@@ -473,18 +473,16 @@
 
 
 
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector(".menu_b").addEventListener("click", () => {
+      document.getElementById("mySidenav").style.width = "100%";
+    });
 
-
-
-
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
+    document.querySelector(".closebtn").addEventListener("click", () => {
+      document.getElementById("mySidenav").style.width = "0";
+    });
+  });
 </script>
 
 
