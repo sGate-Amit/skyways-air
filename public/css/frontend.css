@@ -90,3 +90,25 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px){
 
 }
+
+@media (max-width: 767px) {
+
+.widget{ margin-bottom: 0;}
+
+#footer-wrapper {padding-top: 20px;}
+
+.widget ul > li {padding-left: 0;
+}
+.page-content [class*="col-"], aside [class*="col-"], [class*="col-"].footer-widget-container {
+	margin-bottom: 0px;
+}
+	
+}
+
+
+
+
+
+
+
+
