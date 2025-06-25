@@ -272,7 +272,7 @@ form.submitting .wpcf7-spinner {
 .image-background {
 	height: 200px !important;
 }
-.vdeeoText h2 {font-size: 32px; line-height: 39px;}
+.vdeeoText h2 {font-size: 32px  !important; ; line-height: 39px  !important;;}
 
 
 }
