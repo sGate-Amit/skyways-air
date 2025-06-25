@@ -5353,6 +5353,8 @@ ul.blog-posts > li{
     align-items: center;}
 .profileDirector2 .titles{
     color: #fac312;
+	padding-top:10px;
+	font-size: 18px;
 	padding-bottom: 0px;
 }
 .profileDirector p{
