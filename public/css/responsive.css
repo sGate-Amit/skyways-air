@@ -1014,7 +1014,7 @@ All this is done for any sub-level being entered.
     }
 
     .logo img{
-        margin: 0 auto 15px;
+        margin: 0 auto ;
     }
 
     .navbar-collapse.collapse{
@@ -1534,7 +1534,7 @@ All this is done for any sub-level being entered.
     }
 
     .logo img{
-        margin: 0 auto 15px;
+        margin: 0 auto ;
     }
 
     .navbar-collapse.collapse{
