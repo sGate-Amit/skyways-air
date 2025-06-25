@@ -238,9 +238,9 @@ form.submitting .wpcf7-spinner {
 }
 
 .closeee h5 {
-	color: #fff;
+	color: #fff!important;
 	font-size: 19px !important;
-	cursor: pointer;
+	cursor: pointer!important;
 }
 
 .navbar.navbar-default.nav-left.pi-mega {
