@@ -967,9 +967,10 @@ blockquote cite{
     position: relative;
 }
 
-.navbar-header{
-    padding-top: 18px;
-    padding-left: 30px;
+.navbar-header {
+	padding-top: 6px;
+	padding-left: 30px;
+	padding-bottom: 4px;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form{
