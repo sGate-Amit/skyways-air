@@ -237,11 +237,15 @@ form.submitting .wpcf7-spinner {
 .menu_b {display: none!important;
 }
 
-
+.closeee h5 {
+	color: #fff;
+	font-size: 19px !important;
+	cursor: pointer;
+}
 
 
 @media (max-width:1024px) {
-.vdeeoText h2 {font-size: 49px;}
+.vdeeoText h2 {font-size: 49px !important;}
 
 }
 @media (max-width:767px) {
