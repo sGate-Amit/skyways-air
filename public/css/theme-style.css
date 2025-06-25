@@ -5351,6 +5351,10 @@ ul.blog-posts > li{
 .profileDirector p{
     text-align: justify;
 }
+.profileDirector img{
+   border: 2px solid #fac312;
+   border-radius: 5px;
+}
 @media only screen and (max-width: 600px){
     .service-icon-left .icon-container i{
         text-align : start;
