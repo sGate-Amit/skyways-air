@@ -486,59 +486,87 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+
+
+
+
+<!-- Your menu HTML goes here -->
+
 <script is:inline>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
-  }
+  // Handle first-level menu items
+  document.querySelectorAll(".menu_main > ul > li").forEach(function (item) {
+    item.addEventListener("click", function (e) {
+      e.stopPropagation();
+      const dropdown = this.querySelector(".dl-submenu");
+      if (!dropdown) return;
 
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
+      const isOpen = dropdown.style.display === "block";
 
-  document.addEventListener("click", function (e) {
-    const sidenav = document.getElementById("mySidenav");
-    if (!sidenav.contains(e.target)) {
-      // Close all submenus
-      document.querySelectorAll(".dl-submenu, .dl-submenusub").forEach(dd => dd.style.display = "none");
-    }
+      // Close all submenus + sub-submenus
+      document.querySelectorAll(".dl-submenu").forEach(dd => dd.style.display = "none");
+      document.querySelectorAll(".dl-submenusub").forEach(dd => dd.style.display = "none");
+
+      if (!isOpen) {
+        dropdown.style.display = "block";
+      }
+    });
   });
 
-  document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".menu_main > ul > li").forEach(item => {
-      item.addEventListener("click", function (e) {
-        e.stopPropagation();
-        const dropdown = this.querySelector(".dl-submenu");
-        if (!dropdown) return;
-        document.querySelectorAll(".dl-submenu").forEach(dd => dd.style.display = "none");
-        dropdown.style.display = "block";
-      });
-    });
+  // Handle second-level menu items (inside dl-submenu)
+  document.querySelectorAll(".menu_main > ul > li > ul > li").forEach(function (item) {
+    item.addEventListener("click", function (e) {
+      e.stopPropagation();
+      const subDropdown = this.querySelector(".dl-submenusub");
+      if (!subDropdown) return;
 
-    document.querySelectorAll(".menu_main > ul > li ul li").forEach(item => {
-      item.addEventListener("click", function (e) {
-        e.stopPropagation();
-        const sub = this.querySelector(".dl-submenusub");
-        if (!sub) return;
-        document.querySelectorAll(".dl-submenusub").forEach(dd => dd.style.display = "none");
-        sub.style.display = "block";
-      });
-    });
+      const isOpen = subDropdown.style.display === "block";
 
-    document.querySelectorAll(".backsingle").forEach(btn => {
-      btn.addEventListener("click", function (e) {
-        e.stopPropagation();
-        this.closest(".dl-submenu").style.display = "none";
-      });
-    });
+      // Close all sub-submenus
+      document.querySelectorAll(".dl-submenusub").forEach(dd => dd.style.display = "none");
 
-    document.querySelectorAll(".backdouble").forEach(btn => {
-      btn.addEventListener("click", function (e) {
-        e.stopPropagation();
-        this.closest(".dl-submenusub").style.display = "none";
-      });
+      if (!isOpen) {
+        subDropdown.style.display = "block";
+      }
     });
+  });
+
+  // Prevent closing when clicking inside submenu or sub-submenu
+  document.querySelectorAll(".dl-submenu, .dl-submenusub").forEach(function (submenu) {
+    submenu.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+  });
+
+  // Back buttons
+  document.querySelectorAll(".backsingle").forEach(function (backItem) {
+    backItem.addEventListener("click", function (e) {
+      e.stopPropagation();
+      const parentSubmenu = this.closest(".dl-submenu");
+      if (parentSubmenu) {
+        parentSubmenu.style.display = "none";
+      }
+    });
+  });
+
+  document.querySelectorAll(".backdouble").forEach(function (backItem) {
+    backItem.addEventListener("click", function (e) {
+      e.stopPropagation();
+      const parentSubmenu = this.closest(".dl-submenusub");
+      if (parentSubmenu) {
+        parentSubmenu.style.display = "none";
+      }
+    });
+  });
+
+  // Clicking outside closes all
+  document.addEventListener("click", function () {
+    document.querySelectorAll(".dl-submenu, .dl-submenusub").forEach(dd => dd.style.display = "none");
   });
 </script>
+
+
+
+
 
 
 
