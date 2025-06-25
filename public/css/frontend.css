@@ -102,6 +102,15 @@
 .page-content [class*="col-"], aside [class*="col-"], [class*="col-"].footer-widget-container {
 	margin-bottom: 0px;
 }
+	.breadcrumb-container .breadcrumb {
+	background: none;
+}
+.page-title-style02 {padding: 11px 0;}
+
+.page-title-style02[data-astro-cid-gkq7oefr] {
+	top: 0!important;
+	margin-bottom: 30px!important;
+}
 	
 }
 
