@@ -384,7 +384,7 @@ All this is done for any sub-level being entered.
 
     .header-wrapper{
         position: initial;
-        padding-bottom: 15px;
+        padding-bottom: 0;
     }
 
     .header-style01 #quick-links li,
@@ -899,13 +899,21 @@ All this is done for any sub-level being entered.
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px){
+
+.navbar-header {
+	padding-top: 0;
+	padding-left: 30px;
+	padding-bottom: 0;
+}
+   
     /*  
         HEADER WRAPPER STYLING 
         --------------------------------------------------------------------- */
 
+   
     .header-wrapper{
         position: initial;
-        padding-bottom: 15px;
+        padding-bottom: 0;
     }
 
     .header-style01 #quick-links li,
@@ -1425,7 +1433,7 @@ All this is done for any sub-level being entered.
         --------------------------------------------------------------------- */
     .header-wrapper{
         position: initial;
-        padding-bottom: 15px;
+        padding-bottom: 0;
     }
 
     .header-style01 #quick-links li,
