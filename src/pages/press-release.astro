@@ -557,14 +557,32 @@ min-height: 301px;
   width: 100%;
 }
 .blogbox h2 {
-  margin: 0px;
-  padding: 0px;
+margin: 0;
+  padding: 0;
   display: inline-block;
   width: 100%;
- font-size: 15px;
-  line-height: 21px;
-  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Open Sans;
+position: relative;
 }
+
+.blogbox h2::before {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 40px;
+	height: 3px;
+	bottom: -19px !important;
+	left: 50%;
+	margin-left: -20px;
+	background: #fac312;
+}
+
+
 .blogbox {
   margin: 0 0 20px;
 }
