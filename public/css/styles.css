@@ -388,7 +388,10 @@ form.submitting .wpcf7-spinner {
 	/* top: 10px; */
 	float: right;
 }
-
+#menu-our-services li {
+	margin: 0px !important;
+	padding: 0px !important;
+}
 
 
 /**** END menu ***/
