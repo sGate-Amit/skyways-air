@@ -450,6 +450,32 @@ form.submitting .wpcf7-spinner {
 
 
 
+.servicesContent h2 {
+  margin: 10px 0;
+  font-size: 29px;
+  font-weight: bold;
+}
+.servicesContent p {
+  font-size: 15px;
+  line-height: 27px;
+  text-align: justify;
+  margin: 12px 0;
+  color: #000;
+}
+.servicesContent img {
+  border-radius: 15px;
+}
+.servicesContent figure {
+  margin: 0 0 20px;
+}
+
+
+
+
+
+
+
+
 /**** END menu ***/
 
 
