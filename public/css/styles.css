@@ -451,9 +451,9 @@ form.submitting .wpcf7-spinner {
 
 
 .servicesContent h2 {
-  margin: 10px 0;
-  font-size: 29px;
-  font-weight: bold;
+  margin: 10px 0 !important;
+  font-size: 29px !important;
+  font-weight: bold !important;
 }
 .servicesContent p {
 	font-size: 15px !important;
@@ -463,10 +463,10 @@ form.submitting .wpcf7-spinner {
 	color: #000 !important;
 }
 .servicesContent img {
-  border-radius: 15px;
+  border-radius: 15px !important;
 }
 .servicesContent figure {
-  margin: 0 0 20px;
+  margin: 0 0 20px !important;;
 }
 
 
