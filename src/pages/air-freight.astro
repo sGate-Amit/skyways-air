@@ -520,6 +520,8 @@
   margin: 10px 0 !important;
   font-size: 29px !important;
   font-weight: bold !important;
+position:relative;
+
 }
 .servicesContent p {
 	font-size: 15px !important;
@@ -534,6 +536,16 @@
 .servicesContent figure {
   margin: 0 0 20px !important;;
 }
+
+.servicesContent h2::before {
+	position: absolute;
+	content: "";
+	width: 60px;
+	height: 3px;
+	background: #fab700;
+	bottom: -4px;
+}
+
 
 				  </style>
 				  
