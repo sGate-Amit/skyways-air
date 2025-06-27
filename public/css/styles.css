@@ -394,6 +394,62 @@ form.submitting .wpcf7-spinner {
 }
 
 
+
+.blogbox22 {
+  min-height: 301px;
+  padding: 0;  margin: 0 0 20px;
+  display: inline-block;
+  width: 100%;
+}
+.blogbox22 figure{
+	margin: 0 0 6px;
+	overflow: hidden;
+	padding: 0;
+	display: inline-block;
+	width: 100%;
+}
+
+
+.blogbox22 figure img {
+	border-radius: 8px;
+	transition: 1.2s ease all;
+	height: 200px;
+	width: 100%;
+}
+.blogbox22:hover img {
+	transform: scale(1.1);
+	transition: 1.2s ease all;
+}
+
+
+.blogbox22 h2 {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	width: 100%;
+	font-size: 13px;
+	line-height: 17px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Open Sans;
+	position: relative;
+}
+.blogbox22 h2::before {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 40px;
+	height: 3px;
+	bottom: -19px !important;
+	left: 50%;
+	margin-left: -20px;
+	background: #fac312;
+}
+
+
+
+
 /**** END menu ***/
 
 
