@@ -527,6 +527,7 @@
 	text-align: justify;
 	margin: 12px 0!important;
 	color: #000 !important;
+position:relative;
 }
 .servicesContent img {
   border-radius: 15px !important;
@@ -534,6 +535,16 @@
 .servicesContent figure {
   margin: 0 0 20px !important;;
 }
+
+.servicesContent h2::before {
+	position: absolute;
+	content: "";
+	width: 60px;
+	height: 3px;
+	background: #fab700;
+	bottom: -10px;
+}
+
 
 				  </style>
 				  
