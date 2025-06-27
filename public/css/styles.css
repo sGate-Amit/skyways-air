@@ -475,6 +475,142 @@ form.submitting .wpcf7-spinner {
 
 
 
+.servicesContent h2 {
+  margin: 10px 0 !important;
+  font-size: 29px !important;
+  font-weight: bold !important;
+position:relative;
+
+}
+.servicesContent p {
+font-size: 14px !important;
+  line-height: 22px !important;
+  text-align: justify;
+  margin: 0 0 10px !important;
+  color: #000 !important;
+  padding: 0 !important;
+}
+.servicesContent img {
+  border-radius: 15px !important;
+}
+.servicesContent figure {
+  margin: 0 0 20px !important;;
+}
+
+.servicesContent h2::before {
+	position: absolute;
+	content: "";
+	width: 60px;
+	height: 3px;
+	background: #fab700;
+	bottom: -4px;
+}
+
+.servicesContent strong {
+	font-size: 15px !important;
+	color: #000 !important;
+	
+}
+
+.servicesContent h3 {
+	color: #000 !important;
+	font-size: 20px !important;
+	font-weight: bold !important;
+	margin: 5px 0 !important;
+}
+
+.servicesContent i {
+    font-size: 15px !important;
+    color: #000 !important;
+    font-style: italic !important;
+    font-weight: 700 !important;
+    padding-bottom: 14px !important;
+    display: inline-block!important;
+    width: 100%!important;
+}
+
+.Padding14{
+ 
+    padding-bottom: 14px !important;
+
+}
+
+
+.lostservices li:before {
+    content: ' \2714';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.lostservices li {
+    padding: 0 0 0 24px;
+    color: #000;
+    font-size: 14px;
+    margin: 0 0 15px;
+    list-style: none;
+    position: relative;
+}
+.servicesMain {
+ 
+    display: inline-block;
+    width: 100%;
+}
+
+.servicesMain {
+    background: #f8f8f8 url("/images/light_bkg.png");
+    padding: 60px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.page-title-style02 {
+
+    margin-bottom: 90px !important;
+}
+
+ .serviceimg figure:before {
+ 
+     content: "";
+    background-image: linear-gradient(90deg, #dddddd21, #ffffff4f, #ffffff0d 80px);
+    background-size: 600px;
+    animation: shine-avatar 1.6s infinite linear;
+    left: 0;
+    right: 0;
+    position: absolute;
+    bottom: 0;    opacity: .4;
+    top: 0;
+}
+
+
+@keyframes shine-avatar {
+  0% {
+    background-position: -32px;
+  }
+  40%, 100% {
+    background-position: 208px;
+  }
+}
+-moz-@keyframes shine-avatar {
+  0% {
+    background-position: -32px;
+  }
+  40%, 100% {
+    background-position: 208px;
+  }
+}
+
+-webkit-@keyframes shine-avatar {
+  0% {
+    background-position: -32px;
+  }
+  40%, 100% {
+    background-position: 208px;
+  }
+}
+.servicesContent h4 {
+    font-weight: bold;
+}
+
 
 /**** END menu ***/
 
