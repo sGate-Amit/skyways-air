@@ -456,11 +456,11 @@ form.submitting .wpcf7-spinner {
   font-weight: bold;
 }
 .servicesContent p {
-  font-size: 15px;
-  line-height: 27px;
-  text-align: justify;
-  margin: 12px 0;
-  color: #000;
+	font-size: 15px !important;
+	line-height: 27px !important;
+	text-align: justify;
+	margin: 12px 0;
+	color: #000 !important;
 }
 .servicesContent img {
   border-radius: 15px;
