@@ -624,10 +624,11 @@ font-size: 14px !important;
   margin: 0 0.3%;
 }
 
-
-.serviceMain{display: flex; width: 78%;}
-
-
+.serviceMain {
+	display: flex;
+	width: 78%;
+	margin: 0 auto;
+}
 
 @media (max-width:1024px) {
 .vdeeoText h2 {font-size: 49px !important;}
