@@ -635,6 +635,14 @@ font-size: 14px !important;
 	margin: 0 auto;
 }
 
+@media (max-width:1224px) {
+.serviceWrap {
+	
+	width: 100%;
+	
+}
+
+}
 
 @media (max-width:1024px) {
 .vdeeoText h2 {font-size: 49px !important;}
