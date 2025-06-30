@@ -812,19 +812,27 @@
   text-align: center;
 }
 .largeimg ul li {
-  width: auto;
+ width: auto;
   display: inline-block;
+  vertical-align: top;;
 }
 .largeimg ul li img {
 
   padding: 0px !important;
 }			 
-					 
+	
+.largeimg li a {
+	background: #ccc;
+	padding: 10px;
+	vertical-align: text-bottom;
+	min-height: 101px;
+	display: flex;
+	align-items: center;
+}
+	
 a.lightbox img {
-height: 150px;
-border: 3px solid white;
-box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-margin: 94px 20px 20px 20px;
+max-width: 122px;
+
 }
 
 /* Styles the lightbox, removes it from sight and adds the fade-in transition */
@@ -929,7 +937,9 @@ z-index: 99999;
 
 .lightbox-target:target img {
 max-height: 100%;
-max-width: 100%;
+  max-width: 100%;
+  background: #fff;
+  padding: 20px !important;
 }
 
 .lightbox-target:target a.lightbox-close {
