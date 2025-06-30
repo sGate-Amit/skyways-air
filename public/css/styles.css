@@ -654,7 +654,10 @@ font-size: 14px !important;
   font-size: 15px;
 }
 
-
+.nTimelineRepeat {
+	display: flex;
+	justify-content: space-between;
+}
 
 
 
