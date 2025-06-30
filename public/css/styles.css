@@ -642,14 +642,26 @@ font-size: 14px !important;
 	
 }
 
+
+	
 }
 
 @media (max-width:1024px) {
 .vdeeoText h2 {font-size: 49px !important;}
 
+
+
+	
 }
 @media (max-width:767px) {
 
+.service-feature-box {
+	width: 47%;
+	margin: 0 1%;
+	display: inline-block;
+	vertical-align: top;
+}
+	
 .menu_b {
 	
 	top: 29px !important;
