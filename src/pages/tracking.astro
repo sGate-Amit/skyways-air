@@ -232,6 +232,10 @@
         errorMsg.innerText = "Select airline and enter AWB number.";
         return;
       }
+      if (!/^\d+$/.test(trackingNumber)) {
+        errorMsg.innerText = "AWB number must contain digits only.";
+        return;
+      }
       payload.trackingNumber = `${airlineCode}-${trackingNumber}`;
     } else {
       const shippingLineCode = document.getElementById("shippingLine").value;
