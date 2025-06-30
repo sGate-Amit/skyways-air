@@ -657,8 +657,8 @@ font-size: 14px !important;
 .nTimelineRepeat {
 	display: flex;
 	justify-content: space-between;
+	margin: 0 0 23px;
 }
-
 
 .newtcommon {
 
@@ -681,7 +681,7 @@ font-size: 14px !important;
 }
 
 .newTimeBox2 {
-	width: 200px;
+	width:180px;
 }
 
 .ntimeText {
@@ -703,6 +703,23 @@ font-size: 14px !important;
 .nTimelineRepeat:nth-child(2n)  .ntimeText {
   text-align: left;
 }
+.timeLine {
+	position: absolute;
+	top: 22px;
+	right: -47px;
+	border-bottom: 1px solid #ccc;
+	width: 38px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /**************************************************************************/
 /**************************responsive************************************************/
