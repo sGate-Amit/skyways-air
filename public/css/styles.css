@@ -745,6 +745,14 @@ font-size: 14px !important;
 	opacity: .8;
 }
 
+.shipmentsboxinn {
+  width: 90%;
+  margin: 0 auto;
+}
+.shipmentsbox {
+  margin: 10px 0 60px;
+  display: inline-block;
+}
 
 /**************************************************************************/
 /**************************responsive************************************************/
