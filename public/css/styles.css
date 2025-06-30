@@ -687,7 +687,9 @@ font-size: 14px !important;
 .ntimeText {
 	text-align: right;
 }
-
+.timrimg img {
+	border-radius: 8px;
+}
 
 
 
