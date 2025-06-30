@@ -278,7 +278,7 @@
 
     } catch (e) {
         iframe.srcdoc = `<div style="display:flex;justify-content:center;align-items:center;height:100%;font-family:sans-serif;color:red;text-align:center;padding:20px;">
-          ${data.error || data.message || "Tracking failed."}
+          Network or server error. Please try again later.
         </div>`;
       wrapper.style.display = "block";
       console.error("API fetch failed:", e);
