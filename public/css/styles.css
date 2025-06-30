@@ -629,13 +629,11 @@ font-size: 14px !important;
 	margin: 0 auto;
 }
 
-
 .serviceWrap {
-	display: inline-block;
+	display: block;
 	width: 78%;
 	margin: 0 auto;
 }
-
 
 
 @media (max-width:1024px) {
