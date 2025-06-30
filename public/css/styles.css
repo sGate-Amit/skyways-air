@@ -737,9 +737,13 @@ font-size: 14px !important;
   display: flex;
 }
 
+.fa.fa-linkedin:hover {
+	opacity: .8;
+}
 
-
-
+.fa.fa-facebook:hover {
+	opacity: .8;
+}
 
 
 /**************************************************************************/
