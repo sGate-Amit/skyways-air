@@ -644,7 +644,9 @@ font-size: 14px !important;
 }
 
 
-
+.textwidget {
+	margin: 0 0 14px;
+}
 .textwidget {
   text-align: center;
 }
