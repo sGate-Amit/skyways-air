@@ -242,15 +242,15 @@ alert ("HJ");
           showError("Fill all ocean tracking fields.");
           return;
         }
-  
+          const formattedTracking = `${trackingType}${trackingNumber}-${shippingLineCode}`;
+        
         payload = {
           username,
           password,
           mode,
-          shippingLineCode,
-          trackingType,
-          trackingNumber
+          trackingNumber: formattedTracking
         };
+
       }
   
       try {
