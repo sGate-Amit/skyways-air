@@ -689,7 +689,9 @@ font-size: 14px !important;
 	width: 280px;
 }
 
-
+.ntimeText {
+	text-align: right;
+}
 
 
 
