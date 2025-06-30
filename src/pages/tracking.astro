@@ -1,1 +1,97 @@
+<script>
+    window.toggleFields = function () {
+      const mode = document.querySelector('input[name="mode"]:checked').value;
+      document.getElementById("airFields").classList.toggle("hidden", mode !== "air");
+      document.getElementById("oceanFields").classList.toggle("hidden", mode !== "ocean");
+      document.getElementById("iframeWrapper").style.display = "none";
+    };
+  
+    window.submitTracking = async function () {
+      const mode = document.querySelector('input[name="mode"]:checked').value;
+      const iframe = document.getElementById("trackingIframe");
+      const wrapper = document.getElementById("iframeWrapper");
+  
+      // Reset state
+      iframe.src = "";
+      iframe.removeAttribute("srcdoc");
+      wrapper.style.display = "none";
+  
+      const username = "kashish259261@gmail.com";
+      const password = "Kashish@1234";
+      let payload = { username, password, mode };
+  
+      if (mode === "air") {
+        const airlineCode = document.getElementById("airline").value;
+        const trackingNumber = document.getElementById("awbNumber").value.trim();
+  
+        if (!airlineCode || !trackingNumber) {
+          showError("Select airline and enter AWB number.");
+          return;
+        }
+  
+        if (!/^\d+$/.test(trackingNumber)) {
+          showError("AWB number must contain digits only.");
+          return;
+        }
+  
+        payload.trackingNumber = `${airlineCode}-${trackingNumber}`;
+      } else {
+        const shippingLineCode = document.getElementById("shippingLine").value;
+        const trackingType = document.getElementById("trackingType").value;
+        const trackingNumber = document.getElementById("oceanTracking").value.trim();
+  
+        if (!shippingLineCode || !trackingType || !trackingNumber) {
+          showError("Fill all ocean tracking fields.");
+          return;
+        }
+  
+        payload = {
+          username,
+          password,
+          mode,
+          shippingLineCode,
+          trackingType,
+          trackingNumber
+        };
+      }
+  
+      try {
+        const res = await fetch("https://your-worker-url.workers.dev", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+  
+        const data = await res.json();
+  
+        if (data.success && data.data?.trackingUrl) {
+          iframe.src = data.data.trackingUrl;
+          wrapper.style.display = "block";
+        } else {
+          iframe.srcdoc = `<div style="display:flex;justify-content:center;align-items:center;height:100%;font-family:sans-serif;color:red;text-align:center;padding:20px;">
+            ${data.error || data.message || "Tracking failed."}
+          </div>`;
+          wrapper.style.display = "block";
+        }
+  
+      } catch (e) {
+        iframe.srcdoc = `<div style="display:flex;justify-content:center;align-items:center;height:100%;font-family:sans-serif;color:red;text-align:center;padding:20px;">
+          Network or server error. Please try again later.
+        </div>`;
+        wrapper.style.display = "block";
+        console.error("API fetch failed:", e);
+      }
+    };
+  
+    function showError(msg) {
+      const iframe = document.getElementById("trackingIframe");
+      const wrapper = document.getElementById("iframeWrapper");
+  
+      iframe.srcdoc = `<div style="display:flex;justify-content:center;align-items:center;height:100%;font-family:sans-serif;color:red;text-align:center;padding:20px;">
+        ${msg}
+      </div>`;
+      wrapper.style.display = "block";
+    }
+  </script>
+  
 
