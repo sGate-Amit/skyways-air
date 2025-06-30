@@ -265,6 +265,7 @@
         });
   
         const data = await res.json();
+      alert("API Response:\n" + JSON.stringify(data, null, 2));
   
         if (data.success && data.data?.trackingUrl) {
           iframe.src = data.data.trackingUrl;
