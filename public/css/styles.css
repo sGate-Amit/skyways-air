@@ -710,7 +710,9 @@ font-size: 14px !important;
 	border-bottom: 1px solid #ccc;
 	width: 38px;
 }
-
+.newTimeBox1 {
+	position: relative;
+}
 
 
 
