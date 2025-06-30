@@ -1,3 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Skyways Shipment Tracking</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f5f5f5;
+      padding: 40px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .mode-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+
+    .mode-toggle input[type="radio"] {
+      appearance: none;
+      border: 2px solid #ccc;
+      border-radius: 50%;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      margin-right: 8px;
+    }
+
+    .mode-toggle input[type="radio"]:checked {
+      border: 6px solid #4CAF50;
+    }
+
+    .mode-toggle label {
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    select, input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      min-width: 200px;
+      flex: 1;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .iframe-wrapper {
+      width: 100%;
+      height: 400px;
+      background: #eee;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-top: 20px;
+      display: none;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .btn {
+      background: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 0 auto;
+      display: block;
+      border-radius: 5px;
+    }
+
+    .error-message {
+      color: red;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Track your shipment</h1>
+
+    <!-- Mode Toggle -->
+    <div class="mode-toggle">
+      <label><input type="radio" name="mode" value="air" checked onchange="toggleFields()"> Air</label>
+      <label><input type="radio" name="mode" value="ocean" onchange="toggleFields()"> Ocean</label>
+    </div>
+
+    <!-- Air Fields -->
+    <div class="form-row" id="airFields">
+      <select id="airline">
+        <option value="555">Aeroflot</option>
+        <option value="514">Air Arabia</option>
+        <option value="807">Air Asia</option>
+        <option value="014">Air Canada</option>
+        <option value="996">Air Europa</option>
+        <option value="607">Air France</option>
+        <option value="098">Air India</option>
+        <option value="205">All Nippon Airways</option>
+        <option value="988">Asiana Airlines</option>
+        <option value="125">British Airways</option>
+        <option value="999">Cathay Pacific</option>
+        <option value="016">Delta Airlines</option>
+        <option value="157">Egypt Air</option>
+        <option value="176">Emirates</option>
+        <option value="157">Etihad Airways</option>
+        <option value="217">Ethiopian Airlines</option>
+        <option value="589">Fly Dubai</option>
+        <option value="131">Gulf Air</option>
+        <option value="157">Indigo</option>
+        <option value="053">Japan Airlines</option>
+        <option value="180">Kenya Airways</option>
+        <option value="043">KLM Royal Dutch Airlines</option>
+        <option value="229">Korean Air</option>
+        <option value="157">Kuwait Airways</option>
+        <option value="086">Lufthansa</option>
+        <option value="014">Qatar Airways</option>
+        <option value="232">Royal Jordanian</option>
+        <option value="781">Saudia</option>
+        <option value="618">Singapore Airlines</option>
+        <option value="297">SriLankan Airlines</option>
+        <option value="724">Thai Airways</option>
+        <option value="217">Turkish Airlines</option>
+        <option value="176">United Airlines</option>
+      </select>
+      <input type="text" id="awbNumber" maxlength="8" placeholder="Enter 8-digit AWB number">
+    </div>
+
+    <!-- Ocean Fields -->
+    <div class="form-row hidden" id="oceanFields">
+      <select id="trackingType">
+        <option value="">Select Tracking Type</option>
+        <option value="BK">Booking Number</option>
+        <option value="BL">Bill of Lading</option>
+        <option value="CT">Container</option>
+      </select>
+      <select id="shippingLine">
+        <option value="ZIMU">Zim Integrated Shipping Services</option>
+        <option value="YMLU">Yang Ming Marine Transport Corporation</option>
+        <option value="INTL">Interasia Lines</option>
+        <option value="PACU">Pacific International Lines (PIL)</option>
+        <option value="MAEU">Maersk Line</option>
+        <option value="HLCU">Hapag-Lloyd</option>
+        <option value="EGLV">Evergreen Marine Corp</option>
+        <option value="HDMU">Hyundai Merchant Marine</option>
+        <option value="MSCU">MSC Mediterranean Shipping Company</option>
+        <option value="OOLU">OOCL</option>
+        <option value="WHLC">Wan Hai Lines</option>
+        <option value="ANNU">ANL Container Line</option>
+        <option value="SMLM">Samudera Shipping Line</option>
+        <option value="PASI">Pasha Hawaii</option>
+        <option value="TSLR">TS Lines</option>
+        <option value="KMTC">Korea Marine Transport Company</option>
+        <option value="HJSU">Hanjin Shipping</option>
+        <option value="FESO">FESCO Transportation</option>
+        <option value="SUDU">Hamburg Süd</option>
+      </select>
+      <input type="text" id="oceanTracking" placeholder="Enter Tracking Number">
+    </div>
+
+    <!-- Submit Button -->
+    <button class="btn" onclick="submitTracking()">Track Shipment</button>
+
+    <!-- Error Message -->
+    <div id="errorMsg" class="error-message"></div>
+
+    <!-- Iframe Preview -->
+    <div class="iframe-wrapper" id="iframeWrapper">
+      <iframe id="trackingIframe" src=""></iframe>
+    </div>
+  </div>
 <script>
     window.toggleFields = function () {
       const mode = document.querySelector('input[name="mode"]:checked').value;
@@ -93,5 +295,9 @@
       wrapper.style.display = "block";
     }
   </script>
+
+</body>
+</html>
+
   
 
