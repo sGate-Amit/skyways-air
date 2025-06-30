@@ -717,6 +717,25 @@ font-size: 14px !important;
 
 
 
+.fa.fa-facebook {
+  background: #0677ed;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 29px;
+  color: #fff;
+}
+.fa.fa-linkedin {
+  background: #0f60a8;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 29px;
+  color: #fff;
+}
+.textwidget ul {
+  display: flex;
+}
 
 
 
