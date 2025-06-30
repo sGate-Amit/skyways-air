@@ -625,11 +625,16 @@ font-size: 14px !important;
 }
 .serviceMain {
 	display: flex;
-	width: 78%;
+	width: 100%;
 	margin: 0 auto;
 }
 
 
+.serviceWrap {
+	display: inline-block;
+	width: 78%;
+	margin: 0 auto;
+}
 
 
 
