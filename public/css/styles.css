@@ -689,7 +689,9 @@ font-size: 14px !important;
 	display: inline-block;
 	vertical-align: top;
 }
-
+.service-feature-box .service-body{
+	min-height: 281px  !important;
+}
 
 	
 .menu_b {
