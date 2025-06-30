@@ -200,80 +200,79 @@
       <iframe id="trackingIframe" src=""></iframe>
     </div>
   </div>
+<script>
+  function toggleFields() {
+    const mode = document.querySelector('input[name="mode"]:checked').value;
+    document.getElementById("airFields").classList.toggle("hidden", mode !== "air");
+    document.getElementById("oceanFields").classList.toggle("hidden", mode !== "ocean");
+    document.getElementById("iframeWrapper").style.display = "none";
+    document.getElementById("errorMsg").innerText = "";
+  }
 
-  <script>
-    function toggleFields() {
-      const mode = document.querySelector('input[name="mode"]:checked').value;
-      document.getElementById("airFields").classList.toggle("hidden", mode !== "air");
-      document.getElementById("oceanFields").classList.toggle("hidden", mode !== "ocean");
-      document.getElementById("iframeWrapper").style.display = "none";
-      document.getElementById("errorMsg").innerText = "";
-    }
-
-    function submitTracking() {
+  async function submitTracking() {
     console.log("Function is now defined!");
-      const mode = document.querySelector('input[name="mode"]:checked').value;
-      const iframe = document.getElementById("trackingIframe");
-      const wrapper = document.getElementById("iframeWrapper");
-      const errorMsg = document.getElementById("errorMsg");
+    const mode = document.querySelector('input[name="mode"]:checked').value;
+    const iframe = document.getElementById("trackingIframe");
+    const wrapper = document.getElementById("iframeWrapper");
+    const errorMsg = document.getElementById("errorMsg");
 
-      errorMsg.innerText = "";
-      iframe.src = "";
-      wrapper.style.display = "none";
+    errorMsg.innerText = "";
+    iframe.src = "";
+    wrapper.style.display = "none";
 
-      // Required credentials (you can replace with dynamic if needed)
-      const username = "kashish259261@gmail.com";
-      const password = "Kashish@1234";
+    const username = "kashish259261@gmail.com";
+    const password = "Kashish@1234";
 
-      let payload = { username, password, mode };
+    let payload = { username, password, mode };
 
-      if (mode === "air") {
-        const airlineCode = document.getElementById("airline").value;
-        const trackingNumber = document.getElementById("awbNumber").value.trim();
-        if (!airlineCode || !trackingNumber) {
-          errorMsg.innerText = "Select airline and enter AWB number.";
-          return;
-        }
-        payload.trackingNumber = `${airlineCode}-${trackingNumber}`;
-      } else {
-        const shippingLineCode = document.getElementById("shippingLine").value;
-        const trackingType = document.getElementById("trackingType").value;
-        const trackingNumber = document.getElementById("oceanTracking").value.trim();
-        if (!shippingLineCode || !trackingType || !trackingNumber) {
-          errorMsg.innerText = "Fill all ocean tracking fields.";
-          return;
-        }
-        payload = {
-          username, password, mode,
-          shippingLineCode,
-          trackingType,
-          trackingNumber
-        };
+    if (mode === "air") {
+      const airlineCode = document.getElementById("airline").value;
+      const trackingNumber = document.getElementById("awbNumber").value.trim();
+      if (!airlineCode || !trackingNumber) {
+        errorMsg.innerText = "Select airline and enter AWB number.";
+        return;
       }
-      console.log("About to call API...");
-      try {
-        const res = await fetch("https://utils.sgate.net/api/v1/tracking", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
-        });
-
-        const data = await res.json();
-    // Show alert with full response
-    alert("API Response:\n" + JSON.stringify(data, null, 2));
-
-        if (data.success && data.data?.trackingUrl) {
-          iframe.src = data.data.trackingUrl;
-          wrapper.style.display = "block";
-        } else {
-          errorMsg.innerText = data.message || "Tracking failed.";
-        }
-      } catch (e) {
-        console.error(e);
-        errorMsg.innerText = "Network or server error.";
+      payload.trackingNumber = `${airlineCode}-${trackingNumber}`;
+    } else {
+      const shippingLineCode = document.getElementById("shippingLine").value;
+      const trackingType = document.getElementById("trackingType").value;
+      const trackingNumber = document.getElementById("oceanTracking").value.trim();
+      if (!shippingLineCode || !trackingType || !trackingNumber) {
+        errorMsg.innerText = "Fill all ocean tracking fields.";
+        return;
       }
+      payload = {
+        username, password, mode,
+        shippingLineCode,
+        trackingType,
+        trackingNumber
+      };
     }
-  </script>
+
+    console.log("About to call API...");
+    try {
+      const res = await fetch("https://utils.sgate.net/api/v1/tracking", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+      alert("API Response:\n" + JSON.stringify(data, null, 2));
+
+      if (data.success && data.data?.trackingUrl) {
+        iframe.src = data.data.trackingUrl;
+        wrapper.style.display = "block";
+      } else {
+        errorMsg.innerText = data.message || "Tracking failed.";
+      }
+    } catch (e) {
+      console.error(e);
+      errorMsg.innerText = "Network or server error.";
+    }
+  }
+</script>
+
 </body>
 </html>
 
