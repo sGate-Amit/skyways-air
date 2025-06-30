@@ -645,6 +645,12 @@ font-size: 14px !important;
 
 
 
+.textwidget {
+  text-align: center;
+}
+.textwidget p {
+  font-size: 15px;
+}
 
 
 
