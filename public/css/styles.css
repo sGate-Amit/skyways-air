@@ -634,6 +634,21 @@ font-size: 14px !important;
 	width: 78%;
 	margin: 0 auto;
 }
+.serviceOPuter {
+	padding: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:1224px) {
 .serviceWrap {
@@ -661,6 +676,7 @@ font-size: 14px !important;
 	display: inline-block;
 	vertical-align: top;
 }
+
 	
 .menu_b {
 	
