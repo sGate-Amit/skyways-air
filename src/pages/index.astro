@@ -800,7 +800,17 @@
                      </div>
 					 
 					 
-					 
+					<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.lightbox-close').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault(); // Stop page jump
+        window.location.hash = ""; // Optional: remove hash from URL
+      });
+    });
+  });
+</script>
+ 
 
 		 
 					 
