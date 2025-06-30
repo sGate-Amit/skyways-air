@@ -624,7 +624,7 @@ font-size: 14px !important;
   margin: 0 0.3%;
 }
 
-.serviceMain {
+.serviceWrap {
 	display: flex;
 	width: 78%;
 	margin: 0 auto;
