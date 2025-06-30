@@ -876,19 +876,23 @@
 
 <style>
 
+.nTimelineRepeat:nth-child(2n) .timeLine {
+	right: initial !important;
+	left: -49px;
+}
+
+.nTimelineRepeat:nth-child(2n) .circlee {
+	left: 0;
+	right: initial !important;
+}
+
 
 .nTimelineRepeat:nth-child(2n) {
 	flex-direction: row-reverse;
 }
 
 
-.nTimelineRepeat:nth-child(2n).timeLine {
-	position: absolute;
 
-	left: -47px !important;
-	
-	right: initial !important;
-}
 
 .TimelineMian2 {
 	background: #fff url("/images/thm-pattern-4.png");
