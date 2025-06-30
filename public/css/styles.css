@@ -679,7 +679,10 @@ font-size: 14px !important;
 	
 }
 @media (max-width:767px) {
-
+.serviceMain {
+	display: inline-block !important;
+	
+}
 .service-feature-box {
 	width: 47%  !important;
 	margin: 0 1% !important;
