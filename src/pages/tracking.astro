@@ -201,16 +201,16 @@
     </div>
   </div>
 <script>
-  function toggleFields() {
+  window.toggleFields = function () {
     const mode = document.querySelector('input[name="mode"]:checked').value;
     document.getElementById("airFields").classList.toggle("hidden", mode !== "air");
     document.getElementById("oceanFields").classList.toggle("hidden", mode !== "ocean");
     document.getElementById("iframeWrapper").style.display = "none";
     document.getElementById("errorMsg").innerText = "";
-  }
+  };
 
-  async function submitTracking() {
-    console.log("Function is now defined!");
+  window.submitTracking = async function () {
+    console.log("✅ submitTracking is running");
     const mode = document.querySelector('input[name="mode"]:checked').value;
     const iframe = document.getElementById("trackingIframe");
     const wrapper = document.getElementById("iframeWrapper");
@@ -249,7 +249,6 @@
       };
     }
 
-    console.log("About to call API...");
     try {
       const res = await fetch("https://utils.sgate.net/api/v1/tracking", {
         method: "POST",
@@ -270,8 +269,9 @@
       console.error(e);
       errorMsg.innerText = "Network or server error.";
     }
-  }
+  };
 </script>
+
 
 </body>
 </html>
