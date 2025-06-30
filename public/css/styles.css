@@ -685,10 +685,11 @@ font-size: 14px !important;
 }
 .service-feature-box {
 	width: 47%  !important;
-	margin: 0 1% !important;
+	margin: 0 1% 11px !important;
 	display: inline-block;
 	vertical-align: top;
 }
+
 
 	
 .menu_b {
