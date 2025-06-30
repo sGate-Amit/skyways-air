@@ -617,6 +617,18 @@ font-size: 14px !important;
 /**** END menu ***/
 
 
+
+
+.service-feature-box {
+  width: 20%;
+  margin: 0 0.3%;
+}
+
+
+.serviceMain{display: flex; width:100%;}
+
+
+
 @media (max-width:1024px) {
 .vdeeoText h2 {font-size: 49px !important;}
 
