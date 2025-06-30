@@ -666,9 +666,37 @@ font-size: 14px !important;
 }
 
 
+.ntimeText h2 {
+
+	padding: 4px 12px;
+	margin: 0;
+	font-size: 24px;
+	color: #000;
+	
+}
+
+
+.ntimeText p {
+
+	padding: 4px 12px;
+	margin: 0;
+	font-size: 14px;
+	color: #000;
+	
+}
 
 
 
+
+
+
+
+
+
+
+
+/**************************************************************************/
+/**************************responsive************************************************/
 @media (max-width:1224px) {
 .serviceWrap {
 	
