@@ -5468,6 +5468,14 @@ ul.blog-posts > li{
   border-radius: 15px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+.careers-content{
+	 display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
 @media only screen and (max-width: 600px){
     .service-icon-left .icon-container i{
         text-align : start;
