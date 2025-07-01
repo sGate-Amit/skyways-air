@@ -754,6 +754,288 @@ font-size: 14px !important;
   display: inline-block;
 }
 
+.imagesimg img {
+	border-radius: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hlogo {
+	padding: 0;
+	width: 100%;
+	margin: 0 0.4%;
+	box-shadow: 0 0 3px #e9f3ff;
+	border-radius: 5px;
+	min-height: 177px;
+	border: 1px solid #e6e6e6;
+}
+.hlogo figure {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #f9f9f9;
+	/* border: 1px solid #e6e6e6; */
+	width: 100%;
+	padding: 12px;
+	min-height: 110px;
+	border-radius: 5px;
+	margin: 0 0 10px;
+}
+.hlogo h2 {
+	font-size: 12px;
+	text-align: center;
+	line-height: 13px;
+	padding: 0 5px;
+}
+.alllogoMain {
+  display: flex;
+  justify-content: stretch;
+}
+
+
+
+.hlogo figure img {
+	max-width: 80px;
+}
+.networklgoSize figure img {
+	max-width: 120px !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hlogo:hover figure {
+  background: #fff;
+}
+.hlogo:hover figure img {
+  transform: scale(1.1);transition: .8s ease all;
+}
+
+.AwardsAndAccoladesMain {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.AwardsAndABox h2 {
+  font-size: 13px;
+  line-height: 16px;font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin: 0 .5%;
+}
+
+.nwhide {
+	display: none;
+}.heightNone .hlogo {
+	min-height: initial !important;
+}
+
+.heightNone figure {
+	margin: 0px !important;
+}
+.AwardsAndABox figure {
+	margin: 0 0 13px;
+	background: #f4f4f4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 200px;
+	border-radius: 7px 10px 0 0px;
+}
+.AwardsAndABox {
+	width: 14%;
+	margin: 0 .3% 20px;
+	display: inline-block;
+	vertical-align: top;
+	box-shadow: 0 0 3px #ececec;
+	border-radius: 5px;
+	min-height: 267px;
+	border: 1px solid #ddd;
+}
+.AwardsAndABox figure img {
+	max-width: 121px;
+}
+.agentaward figure img {
+	max-width: 82px;
+}
+
+.AirCargosize figure img {
+	max-width: 102px;
+}
+
+
+.AwardsAndABox:hover figure img {
+	transform: scale(1.1);
+	transition: .8s ease all;
+}
+
+
+.AwardsAndABoxouter {
+	display: inline-block;
+	width: 100%;
+	margin: 0 0 40px;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 0 0 60px;
+}
+
+
+.ntop {
+	position: absolute;
+	right: 20px;
+	bottom: 30px;
+}
+
+
+.ntop a {
+	background: #796218;
+	width: 30px;
+	display: flex;
+	height: 30px;
+	border-radius: 50%;
+	color: #000;
+	text-align: center;
+	font-size: 14px;
+	align-content: center;
+	align-items: center;
+	border: 2px solid #a48933;
+}
+.ntop img {
+	max-width: 11px;
+	width: auto;
+	margin: 0 auto;
+}
+
+.reonedBox {
+	font-size: 17px !important;
+}
+.hreadmore {
+	/* background: #ececec; */
+	font-size: 15px;
+	padding: 2px 5px;
+	border-radius: 4px;
+	font-weight: bold;
+	color: #fac312;
+}
+
+.circleTop {
+	width: 6px;
+	height: 6px;
+	background: #d7b446;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	margin: auto;
+	animation: circleTop 6s linear infinite;
+	filter: blur(2px);
+}
+
+@keyframes circleTop{
+ 0%{
+   transform:rotate(0deg)
+			 translate(-14px)
+			 rotate(0deg);
+ 
+ }
+ 100%{
+   transform:rotate(360deg)
+			 translate(-14px)
+			 rotate(-360deg);
+ }
+}
+.bottomform {
+	padding: 0 0 70px;
+}
+
+.bformCommon{ padding: 27px;min-height: 865px;}
+
+
+.bformRight {
+  background: #fac312;
+ 
+}
+.bformLeft {
+  background: #f7f7f7;
+  height: 100%;
+  display: inline-block;
+
+}
+
+.getQuote img {
+  border-radius: 11px;
+}
+.getQuote {
+  position: relative;
+}
+.padding0{padding:0px !important;}
+
+
+#footer .container {
+	position: relative;
+}
+
+
+
+.homeaboutMAIN {
+  display: inline-block;
+  width: 100%;
+  background: #f9f9f9;
+  padding: 20px 0;
+
+}
+.haboutcontent p {
+	font-size: 16px;
+	line-height: 28px;
+	color: #575757;
+	text-align: justify;
+	margin: 0 0 20px;
+}
+
+.ftlogotext h5 {
+	font-size: 19px;
+	color: #fff;
+	margin: 0 0 10px;
+}
+
+
+.ftlogotext p {
+	font-size: 14px;
+	color: #fff;
+	margin: 0px;
+	line-height: 19px;
+}
+
+.copyright sub {
+	vertical-align: text-bottom;
+}
+
+.widget2 {
+	margin: 0 0 19px;
+}
+
+.textCenter{text-align:center !important;}
+
+
+
+
+
+
+
 /**************************************************************************/
 /**************************responsive************************************************/
 @media (max-width:1224px) {
