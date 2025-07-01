@@ -1078,6 +1078,14 @@ html {
 
 	
 }
+@media (max-width:991px) {
+.menu_b {
+	display: block !important;
+}
+
+}
+
+
 @media (max-width:767px) {
 	
 	
