@@ -1166,4 +1166,13 @@ html {
 .hlogo {
 	width: 47% !important;
 }
+
+.service-feature-box {
+	width: 100% !important;
+	
+}.service-feature-box .service-body {
+	min-height: auto !important;
+}
+
+
 }
