@@ -1087,6 +1087,11 @@ html {
 
 
 @media (max-width:767px) {
+	
+	.bformCommon {
+	padding: 15px !important;
+	min-height: auto !important;
+}
 	#black-studio-tinymce-2 li {
 	margin: 0 7px 0 0 !important;
 }
