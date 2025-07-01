@@ -1087,6 +1087,10 @@ html {
 
 
 @media (max-width:767px) {
+	.bottomform {
+	padding: 0 0 0!important;
+}
+	
 	
 	.bformCommon {
 	padding: 15px !important;
