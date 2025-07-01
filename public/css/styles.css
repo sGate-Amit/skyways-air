@@ -1087,8 +1087,14 @@ html {
 
 
 @media (max-width:767px) {
-	
-	
+	#black-studio-tinymce-2 li {
+	margin: 0 7px 0 0 !important;
+}
+	.service-feature-box .service-body {
+
+	padding: 6px!important;
+}
+
 	.custom-heading h2 {
 
 	font-size: 20px!important;
