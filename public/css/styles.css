@@ -799,7 +799,7 @@ font-size: 14px !important;
 }
 .alllogoMain {
   display: flex;
-  justify-content: stretch;
+
 }
 
 
@@ -1048,18 +1048,49 @@ html {
 	
 }
 
+.alllogoMain {
+	display: inline-block!important;
+	text-align: center!important;
+	width: 100%!important
+}
+.hlogo {
+	width: 17% !important;
+	margin: 0 0.4% 10px !important;
+	display: inline-block !important;
+	vertical-align: top !important;
+}
 
-	
 }
 
 @media (max-width:1024px) {
 .vdeeoText h2 {font-size: 49px !important;}
 
 
+.hlogo {
+	width: 31% !important;
+	
+}
+
+.AwardsAndABox {
+	width: 30%!important;
+
+}
 
 	
 }
 @media (max-width:767px) {
+	
+	
+	.custom-heading h2 {
+
+	font-size: 20px!important;
+	line-height: 30px!important;
+}
+	
+	
+	
+	
+	
 .serviceMain {
 	display: inline-block !important;
 	
@@ -1109,4 +1140,16 @@ html {
 
 }
 
+@media (max-width:600px) {
+	
+.AwardsAndABox {
+	width: 48%!important;
 
+}
+
+}
+@media (max-width:500px) {
+.hlogo {
+	width: 47% !important;
+}
+}
