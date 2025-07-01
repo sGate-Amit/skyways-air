@@ -5367,6 +5367,124 @@ ul.blog-posts > li{
 .pt-title {
     background: gray;
 }
+.join-skyways-section {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  align-items: center;
+}
+
+.left-content {
+  flex: 1 1 500px;
+}
+
+.left-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.underline {
+  width: 50px;
+  height: 3px;
+  background-color: #f9be00;
+  margin: 10px 0 20px 0;
+}
+
+.left-content p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.right-image {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-image img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.awaits-section {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.text-section {
+  flex: 1 1 500px;
+}
+
+.text-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.underline {
+  width: 50px;
+  height: 3px;
+  background-color: #f9be00;
+  margin: 10px 0 20px 0;
+}
+
+.text-section p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.italic-highlight {
+  font-style: italic;
+  font-weight: 600;
+  color: #333;
+}
+
+.highlight-box {
+  background-color: #d9d9d9;
+  padding: 16px 20px;
+  border-radius: 4px;
+  color: #222;
+}
+
+.highlight-box a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.image-section {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 @media only screen and (max-width: 600px){
     .service-icon-left .icon-container i{
         text-align : start;
