@@ -1011,7 +1011,9 @@ html {
 	color: #fff !important;
 	margin: 0 0 10px;
 }
-
+#media_image-2 {
+	margin-bottom: 9px;
+}
 
 .ftlogotext p {
 	font-size: 14px;
