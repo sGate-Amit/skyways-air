@@ -1033,7 +1033,9 @@ html {
 
 .textCenter{text-align:center !important;}
 
-
+#ht-ctc-chat {
+	display: none!important;
+}
 
 
 
