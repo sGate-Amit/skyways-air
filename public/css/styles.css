@@ -1228,14 +1228,14 @@ html {
 .menu_b {
 	display: block !important;
 }
+.mobileView{display:block !important;}
+.desktopView{display:none !important;}
 
 }
 
 
 @media (max-width:767px) {
 
-.mobileView{display:block !important;}
-.desktopView{display:none !important;}
 
 	
 	
