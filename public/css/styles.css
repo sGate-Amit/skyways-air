@@ -453,7 +453,7 @@ form.submitting .wpcf7-spinner {
 .servicesContent h2 {
   margin: 10px 0 !important;
   font-size: 29px !important;
-  font-weight: bold !important;
+  font-weight: bold !important;line-height: 39px !important;
 }
 .servicesContent p {
 	font-size: 15px !important;
