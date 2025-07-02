@@ -1216,6 +1216,11 @@ html {
 	background-size: cover !important;
 }
 
+.subsidiariesBnaner    {
+	background: url(/images/subsidiaries_banner.jpg) no-repeat !important;
+	height: 249px;
+	background-size: cover !important;
+}
 
 
 
@@ -1296,7 +1301,7 @@ h1 {
 	margin-bottom: 0!important;}
 
 
-.aboutbaner, .trackingBanner, .contactbaner, .teamBanner, .investorsBanner, .groupCompanyBanner  {height: 130px;}
+.aboutbaner, .trackingBanner, .contactbaner, .teamBanner, .investorsBanner, .groupCompanyBanner, .subsidiariesBnaner  {height: 130px;}
 
 
 	
