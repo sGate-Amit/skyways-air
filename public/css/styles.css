@@ -475,7 +475,9 @@ form.submitting .wpcf7-spinner {
 }
 
 
-
+.serviceimg img {
+	width: 100%;
+}
 
 .servicesContent h2 {
   margin: 10px 0 !important;
