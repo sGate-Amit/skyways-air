@@ -1185,6 +1185,31 @@ html {
 .mobileView {
 	display: none !important;
 }
+
+
+.panel-collapse .panel-body {
+	overflow-y: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**************************************************************************/
 /**************************responsive************************************************/
 @media (max-width:1224px) {
