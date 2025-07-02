@@ -1235,6 +1235,11 @@ html {
 
 
 @media (max-width:767px) {
+
+.mobileView > div {
+	margin: 0px !important;
+}
+	
 	.commonbg {
 	width: 95%!important;
 	
