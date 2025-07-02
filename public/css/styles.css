@@ -1236,6 +1236,10 @@ html {
 
 @media (max-width:767px) {
 
+
+	.col-md-7.custom-background.color-background {
+	margin: 0 0 20px !important;
+}
 .custom-background {
 	padding: 0 !important;
 }
