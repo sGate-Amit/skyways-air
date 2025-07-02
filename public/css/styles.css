@@ -1236,6 +1236,12 @@ html {
 
 @media (max-width:767px) {
 
+h1 {
+	font-size: 27px !important;
+	
+}
+
+	
 .custom-heading {
 	margin: 0px !important;
 }
