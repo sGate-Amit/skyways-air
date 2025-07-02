@@ -1236,6 +1236,13 @@ html {
 
 @media (max-width:767px) {
 
+
+h2{
+	font-size: 22px!important;
+	
+}
+
+	
 .nTimelineRepeat:nth-child(2n) .ntimeText {
 	text-align: center!important;
 }
