@@ -1236,7 +1236,9 @@ html {
 
 @media (max-width:767px) {
 
-
+.custom-heading {
+	margin: 0px !important;
+}
 	.col-md-7.custom-background.color-background {
 	margin: 0 0 20px !important;
 }
