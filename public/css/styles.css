@@ -1236,7 +1236,9 @@ html {
 
 @media (max-width:767px) {
 
-
+.newTimeBox3 {
+	display: none;
+}
 	
 	
 	.bottomform {
