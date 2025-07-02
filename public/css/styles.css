@@ -1199,6 +1199,12 @@ html {
 	height: 249px;
 	background-size: cover !important;
 }
+.investorsBanner  {
+	background: url(/images/investorbanner.jpg) no-repeat !important;
+	height: 249px;
+	background-size: cover !important;
+}
+
 
 .allPagesCommon {
 	padding:  0;
