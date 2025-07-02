@@ -1133,7 +1133,7 @@ html {
 
 .visionText h2 {
 
-  color: #fff;
+  color: #fff !important;
 }
 .visionText p {
   font-size: 16px;
