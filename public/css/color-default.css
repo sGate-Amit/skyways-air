@@ -37,7 +37,7 @@
 #commentform #comment-reply,
 .widget.widget_calendar #wp-calendar #today,
 #reply-title:after{
-  background-color: #00A859;
+  background-color: #fac312;
 }
 
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus,
@@ -81,7 +81,7 @@ a.download-link:hover span,
 #header-wrapper #social-links a:hover,
 .widget_tag_cloud a:hover,
 .widget.widget_calendar #wp-calendar td a{
-    color: #00A859;
+    color: #fac312;
 }
 
 .header-style01 .navbar-default .navbar-nav>li>a:hover,
@@ -89,12 +89,12 @@ a.download-link:hover span,
 .header-style01 .nav > li.current-menu-ancestor > a,
 .hr-simple.colored .hr-simple-circle,
 .dropcap.empty{
-    border-color: #00A859;
+    border-color: #fac312;
 }
 
 .dropdown .dropdown-menu .menu-item-has-children > a:hover:after,
 blockquote{
-    border-left-color: #00A859;
+    border-left-color: #fac312;
 }
 
 /* Lighter base 01 */
