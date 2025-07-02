@@ -1235,8 +1235,23 @@ html {
 
 
 @media (max-width:767px) {
+	.corebg {
+	width: 95%!important;
+	
+	min-height: auto!important;
+}
 
+	
+.visionText {
+	
+	text-align: left!important;
+}
 
+.aboutmissinMain {
+	text-align: center!important;
+}
+
+	
 h2{
 	font-size: 22px!important;
 	
