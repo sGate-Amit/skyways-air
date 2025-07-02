@@ -1192,7 +1192,9 @@ html {
 }
 
 
-
+.trackingBanner {
+	background: url(/images/tracking_banner.jpg) no-repeat !important;
+}
 
 
 
@@ -1292,15 +1294,6 @@ html {
 	
 }
 
-
-
-
-
-
-
-
-
-	
 
 h1 {
 	font-size: 27px !important;
