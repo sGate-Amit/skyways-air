@@ -1236,6 +1236,11 @@ html {
 
 @media (max-width:767px) {
 
+.custom-background {
+	padding: 0 !important;
+}
+	
+
 .mobileView > div {
 	margin: 0px !important;
 }
