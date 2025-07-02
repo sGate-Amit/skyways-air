@@ -1210,6 +1210,15 @@ html {
 	background-size: cover !important;
 }
 
+.groupCompanyBanner   {
+	background: url(/images/group_banner.jpg) no-repeat !important;
+	height: 249px;
+	background-size: cover !important;
+}
+
+
+
+
 .allPagesCommon {
 	padding:  0 0 40px;
 }
@@ -1287,7 +1296,7 @@ h1 {
 	margin-bottom: 0!important;}
 
 
-.aboutbaner, .trackingBanner, .contactbaner, .teamBanner, .investorsBanner {height: 130px;}
+.aboutbaner, .trackingBanner, .contactbaner, .teamBanner, .investorsBanner, .groupCompanyBanner  {height: 130px;}
 
 
 	
