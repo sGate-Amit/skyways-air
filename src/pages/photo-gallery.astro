@@ -202,15 +202,13 @@
   width: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .gallery-item img:hover {
   transform: scale(1.05) translateY(-5px); /* Hover upward effect */
 }
 
-   
-
-    /* Lightbox (Popup) */
     .lightbox {
       position: fixed;
       top: 0;
@@ -512,7 +510,6 @@
                            <div style='margin-top:60px;margin-bottom: 25px;' class=''>
                               <div class='custom-heading'>
                                   <div class="gallery-grid">
-      <!-- Gallery Item Example -->
       <div class="gallery-item">
         <img
           src="../images/pic 1 - - Yash ji.jpg"
@@ -626,7 +623,6 @@
       <!-- Add more items with different thumb/full paths -->
     </div>
 
-    <!-- Lightbox (Full Screen View) -->
     <div class="lightbox" id="lightbox">
       <span class="close-btn" onclick="closeLightbox()">×</span>
       <img id="lightbox-img" src="" alt="Full Image" />
