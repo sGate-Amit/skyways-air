@@ -1197,7 +1197,7 @@ html {
 }
 
 .contactMainPgae {
-	padding: 50px 0;
+	padding: 60px 0;
 }
 
 
@@ -1264,7 +1264,9 @@ html {
 
 
 @media (max-width:767px) {
-
+.contactMainPgae {
+	padding: 10px 0;
+}
 .servicesMain {
 	
 	padding: 20px 0 !important;
