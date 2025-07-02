@@ -1192,9 +1192,10 @@ html {
 }
 
 
-.trackingBanner {
-	background: url(/images/tracking_banner.jpg) no-repeat !important;
-}
+.trackingBanner {background: url(/images/tracking_banner.jpg) no-repeat !important;}
+
+contactPages {background: url(/images/contact_banner.jpg) no-repeat !important;}
+
 
 .allPagesCommon {
 	padding: 60px 0;
