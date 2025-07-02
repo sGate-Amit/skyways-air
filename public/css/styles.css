@@ -1192,8 +1192,11 @@ html {
 .trackingBanner {background: url(/images/tracking_banner.jpg) no-repeat !important;}
 
 .contactbaner {background: url(/images/contact_banner.jpg) no-repeat !important;}
-.aboutbaner {background: url(/images/aboutbanner.jpg) no-repeat !important;}
-
+.aboutbaner {
+	background: url(/images/aboutbanner.jpg) no-repeat !important;
+	height: 249px;
+	background-size: cover !important;
+}
 
 .allPagesCommon {
 	padding:  0;
