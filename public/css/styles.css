@@ -1182,10 +1182,9 @@ html {
     -webkit-transform:rotate(359deg)
   }
 }
-
-.mobileView{dispplay:none !important;}
-
-
+.mobileView {
+	display: none !important;
+}
 /**************************************************************************/
 /**************************responsive************************************************/
 @media (max-width:1224px) {
@@ -1235,9 +1234,10 @@ html {
 
 @media (max-width:767px) {
 
-.mobileView{dispplay:block !important;}
-.desktopView{dispplay:none !important;}
+.mobileView{display:block !important;}
+.desktopView{display:none !important;}
 
+	
 	
 	.bottomform {
 	padding: 0 0 0!important;
