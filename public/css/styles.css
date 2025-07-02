@@ -1236,6 +1236,43 @@ html {
 
 @media (max-width:767px) {
 
+
+
+.profileDirector {
+	
+	
+	width: 100% !important;
+	flex-direction: column-reverse !important;
+}
+
+	
+
+.profileDirector1 {
+	width: 100% !important;
+}
+	
+	.profileDirector2 {
+	width: 100%!important;
+	
+}
+
+.profileDirector {
+
+	display: inline-block !important;
+	width: 100% !important;
+	
+}
+
+
+
+
+
+
+
+
+
+	
+
 h1 {
 	font-size: 27px !important;
 	
