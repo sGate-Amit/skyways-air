@@ -177,37 +177,37 @@
                   -moz-border-radius: 0px!important;color: #333;padding-left: 25px!important;width:auto!important;}
                   }
 
-  .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
 
-    .gallery-item {
-      text-align: center;
-      background: #fff;
-      padding: 10px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    flex-direction: column;
-    }
+.gallery-item {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  height: 100%; /* Optional but helpful */
+  display: flex;
+  align-items: stretch;
+}
 
-    .gallery-item img {
-    
-      object-fit: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
+.gallery-item img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  transform-origin: center bottom;
+}
 
-    .gallery-item img:hover {
-      transform: scale(1.03);
-    }
+.gallery-item img:hover {
+  transform: scale(1.05) translateY(-5px); /* Hover upward effect */
+}
 
    
 
@@ -517,127 +517,112 @@ display: flex;
       <div class="gallery-item">
         <img
           src="../images/pic 1 - - Yash ji.jpg"
-          alt="Pic 1 - Yash Ji"
+          alt="Photo and Gallery"
           onclick="openLightbox('../images/pic 1 - - Yash ji1.jpg')"
         />
-        <div class="title">Yash Ji</div>
       </div>
 
       <div class="gallery-item">
         <img
           src="../images/Pic of Chairman & MD.jpg"
-          alt="Chairman & MD"
+          alt="Photo and Gallery"
           onclick="openLightbox('../images/Pic of Chairman & MD1.jpg')"
         />
-        <div class="title">Chairman & MD</div>
       </div>
 
       <div class="gallery-item">
         <img
           src="../images/Skyways Air Services Pvt. Ltd.-CONquest.jpg"
-          alt="Strategy Meet"
+          alt="Photo and Gallery"
           onclick="openLightbox('../images/Skyways Air Services Pvt. Ltd.-CONquest1.jpg')"
         />
-        <div class="title">Skyways Air Services Pvt. Ltd.</div>
       </div>
 
       <div class="gallery-item">
         <img
           src="../images/Strategy Meet Pic.jpg"
-          alt="Strategy Meet"
+          alt="Photo and Gallery"
           onclick="openLightbox('../images/Strategy Meet Pic1.jpg')"
         />
-        <div class="title">Strategy Meet Pic</div>
       </div>
 
       <div class="gallery-item">
         <img
           src="../images/Team pic 2 - 20 years of bangalore 11.jpg"
-          alt="Strategy Meet"
+          alt="Photo and Gallery"
           onclick="openLightbox('../images/Team pic 2 - 20 years of bangalore 1.jpg')"
         />
-        <div class="title">Team pic - 20 years of Bangalore</div>
       </div>
       <div class="gallery-item">
         <img
           src="../images/Team pic - 20 years of Bangalore 12.jpg"
-          alt="Strategy Meet"
+          alt="Photo and Gallery"
           onclick="openLightbox('../images/Team pic - 20 years of Bangalore 2.jpg')"
         />
-        <div class="title">Team pic - 20 years of Bangalore</div>
       </div>
       <div class="gallery-item">
         <img
           src="../images/Team pic - 20 years of Bangalore 13.jpg"
-          alt="Strategy Meet"
+          alt="Photo and Gallery"
           onclick="openLightbox('../images/Team pic - 20 years of Bangalore 3.jpg')"
         />
-        <div class="title">Team pic - 20 years of Bangalore</div>
       </div>
       <div class="gallery-item">
         <img
           src="../images/Team pics of Townhall.jpg"
-          alt="Strategy Meet"
+          alt="Photo and Gallery"
           onclick="openLightbox('../images/Team pics of Townhall1.jpg')"
         />
-        <div class="title">Team pic of townhall</div>
       </div>
 
       <div class="gallery-item">
         <img
           src="../images/team pic for 10 years of Germany.jpg"
-          alt="Strategy Meet"
+          alt="Photo and Gallery"
           onclick="openLightbox('../images/team pic for 10 years of Germany1.jpg')"
         />
-        <div class="title">Team pic for 10 years of Germany</div>
       </div>
       <div class="gallery-item">
         <img
           src="../images/Team pic of leaders - 20 Years of Chennai.jpg"
-          alt="Strategy Meet"
+          alt="Photo and Gallery"
           onclick="openLightbox('../images/Team pic of leaders - 20 Years of Chennai1.jpg')"
         />
-        <div class="title">Team pic of leaders - 20 Years of Chennai</div>
       </div>
       <div class="gallery-item">
         <img
           src="../images/Team pic of Strategy Meet.jpg"
-          alt="Strategy Meet"
+          alt="Photo and Gallery"
           onclick="openLightbox('../images/Team pic of Strategy Meet1.jpg')"
         />
-        <div class="title">Team pic of Strategy Meet</div>
       </div>
       <div class="gallery-item">
         <img
           src="../images/Team pic vietnam.jpg"
-          alt="Strategy Meet"
+          alt="Photo and Gallery"
           onclick="openLightbox('../images/Team pic vietnam1.jpg')"
         />
-        <div class="title">Team pic vietnam 2</div>
       </div>
       <div class="gallery-item">
         <img
           src="../images/team pic vietnam 2.jpg"
-          alt="Strategy Meet"
+          alt="Photo and Gallery"
           onclick="openLightbox('../images/team pic vietnam 1.jpg')"
         />
-        <div class="title">Team pic vietnam</div>
       </div>
       <div class="gallery-item">
         <img
           src="../images/Team pic 2 of townhall.jpg"
-          alt="Strategy Meet"
+          alt="Photo and Gallery"
           onclick="openLightbox('../images/Team pic 2 of townhall1.jpg')"
         />
-        <div class="title">Team pics of Townhall</div>
       </div>
       <div class="gallery-item">
         <img
           src="../images/Teampic 1 - IICS exhbition 2024.jpg"
-          alt="Strategy Meet"
+          alt="Photo and Gallery"
           onclick="openLightbox('../images/Teampic 1 - IICS exhbition 20241.jpg')"
         />
-        <div class="title">Team pic - IICS exhbition 2024</div>
       </div>
       <!-- Add more items with different thumb/full paths -->
     </div>
