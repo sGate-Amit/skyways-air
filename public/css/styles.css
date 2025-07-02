@@ -1091,7 +1091,7 @@ html {
 /************ new vision about *************/
 
 .visionBg {
-	background: #000 url(/images/visionbg.jpg) no-repeat;
+	background: url(/images/visionbg.jpg) no-repeat;
 	padding: 22px;
 	border-radius: 12px;
 	display: inline-block;
