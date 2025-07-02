@@ -1261,7 +1261,11 @@ html {
 
 @media (max-width:767px) {
 
-
+.servicesMain {
+	
+	padding: 20px 0 !important;
+	
+}
 
 .profileDirector {
 	
