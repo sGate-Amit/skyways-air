@@ -1220,7 +1220,9 @@ html {
 
 
 
-
+#menu-navigation li:hover > ul {
+	display: block !important;
+}
 
 
 
