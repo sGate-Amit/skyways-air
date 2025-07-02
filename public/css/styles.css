@@ -1091,7 +1091,7 @@ html {
 /************ new vision about *************/
 
 .visionBg {
-	background: #000 url(../../images/visionbg.jpg) no-repeat;
+	background: #000 url(/images/visionbg.jpg) no-repeat;
 	padding: 22px;
 	border-radius: 12px;
 	display: inline-block;
@@ -1102,7 +1102,7 @@ html {
 
 
 .corebg {
-	background: #000 url(../../images/core_value_bg.jpg) no-repeat;
+	background: #000 url(/images/core_value_bg.jpg) no-repeat;
 	padding: 22px;
 	border-radius: 12px;
 	display: inline-block;
@@ -1115,7 +1115,7 @@ html {
 
 
 .misionBg {
-	background: #000 url(../../images/missonbg.jpg) no-repeat;
+	background: #000 url(/images/missonbg.jpg) no-repeat;
 	padding: 22px;
 	border-radius: 12px;
 	display: inline-block;
