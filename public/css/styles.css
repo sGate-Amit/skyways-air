@@ -194,7 +194,6 @@ form.submitting .wpcf7-spinner {
 	text-align: center;
 }
 
-
 .vdeeoTextMain {
 	position: absolute;
 	top: 50%;
@@ -471,7 +470,9 @@ form.submitting .wpcf7-spinner {
 }
 
 
-
+.aboutText {
+	margin-bottom: 9px !important;
+}
 
 
 
@@ -1034,9 +1035,41 @@ html {
 
 .textCenter{text-align:center !important;}
 
-#ht-ctc-chat {
-	display: none!important;
+
+
+
+
+.aboutcorevalue {
+	box-shadow: 0 0 4px #ccc;
+	border-radius: 5px;
+	display: inline-block;
+	width: 100%;
+	overflow: hidden;
 }
+
+.aboutcorevalueinner {
+	padding: 18px;
+}
+
+.aboutcorevalueinner .custom-heading {
+	padding: 0px;
+	margin: 0 0 7px;
+}
+
+.aboutcorevalueinner h2 {
+	font-size: 23px;
+	padding: 0;
+	margin: 0px;
+}
+
+
+.aboutcorevalueinner ul li {
+	font-size: 14px;
+}
+.aboutcorevalue figure img {
+	width: 100%;
+}
+
 
 
 
