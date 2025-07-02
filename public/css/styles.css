@@ -1236,6 +1236,23 @@ html {
 
 @media (max-width:767px) {
 
+.nTimelineRepeat:nth-child(2n) .ntimeText {
+	text-align: center!important;
+}
+
+
+	
+.ntimeText {
+	text-align: center!important;
+}
+.nTimelineRepeat {
+	
+	
+	flex-direction: column-reverse!important;
+}
+	.newtcommon {
+	width: 100% !important;
+}
 .newTimeBox3 {
 	display: none;
 }
