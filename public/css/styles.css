@@ -1235,6 +1235,12 @@ html {
 	background-size: cover !important;
 }
 
+.toxBANNER{
+	background: url(/images/d-tox_banner.jpg) no-repeat !important;
+	
+	background-size: cover !important;
+}
+
 
 .allPagesCommon {
 	padding:  0 0 40px;
