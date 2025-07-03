@@ -1242,6 +1242,17 @@ html {
 }
 
 
+.WarehousingBanner{
+	background: url(/images/WarehousingBanner_banner.jpg) no-repeat !important;
+	
+	background-size: cover !important;
+}
+
+
+
+
+
+
 .allPagesCommon {
 	padding:  0 0 40px;
 }
