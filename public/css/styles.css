@@ -1189,43 +1189,43 @@ html {
 }
 
 
-.trackingBanner {background: url(/images/tracking_banner.jpg) no-repeat !important; height: 249px;
+.trackingBanner {background: url(/images/tracking_banner.jpg) no-repeat !important;
 	background-size: cover !important;}
 
 .contactbaner {background: url(/images/contact_banner.jpg) no-repeat !important; height: 249px;
 	background-size: cover !important;}
 .aboutbaner {
 	background: url(/images/aboutbanner.jpg) no-repeat !important;
-	height: 249px;
+	
 	background-size: cover !important;
 }
 .investorsBanner  {
 	background: url(/images/investorbanner.jpg) no-repeat !important;
-	height: 249px;
+	
 	background-size: cover !important;
 }
 .teamBanner  {
 	background: url(/images/teamBanner.jpg) no-repeat !important;
-	height: 249px;
+	
 	background-size: cover !important;
 }
 
 .groupCompanyBanner   {
 	background: url(/images/group_banner.jpg) no-repeat !important;
-	height: 249px;
+	
 	background-size: cover !important;
 }
 
 .subsidiariesBnaner    {
 	background: url(/images/subsidiaries_banner.jpg) no-repeat !important;
-	height: 249px;
+
 	background-size: cover !important;
 }
 
 
 .contractlogisticsBanner {
 	background: url(/images/contract_logistci_banner.jpg) no-repeat !important;
-	height: 249px;
+	
 	background-size: cover !important;
 }
 
