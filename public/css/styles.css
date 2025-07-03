@@ -1229,6 +1229,11 @@ html {
 	background-size: cover !important;
 }
 
+.cuddleBanner{
+	background: url(/images/cuddle_banner.jpg) no-repeat !important;
+	
+	background-size: cover !important;
+}
 
 
 .allPagesCommon {
@@ -1308,7 +1313,7 @@ h1 {
 	margin-bottom: 0!important;}
 
 
-.aboutbaner, .trackingBanner, .contactbaner, .teamBanner, .investorsBanner, .groupCompanyBanner, .subsidiariesBnaner, .contractlogisticsBanner  {height: 130px;}
+.aboutbaner, .trackingBanner, .contactbaner, .teamBanner, .investorsBanner, .groupCompanyBanner, .subsidiariesBnaner, .contractlogisticsBanner, .cuddle_banner  {height: 130px;}
 
 
 	
