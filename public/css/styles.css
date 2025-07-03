@@ -1223,6 +1223,13 @@ html {
 }
 
 
+.contractlogisticsBanner {
+	background: url(/images/contract_logistci_banner.jpg) no-repeat !important;
+	height: 249px;
+	background-size: cover !important;
+}
+
+
 
 .allPagesCommon {
 	padding:  0 0 40px;
@@ -1301,7 +1308,7 @@ h1 {
 	margin-bottom: 0!important;}
 
 
-.aboutbaner, .trackingBanner, .contactbaner, .teamBanner, .investorsBanner, .groupCompanyBanner, .subsidiariesBnaner  {height: 130px;}
+.aboutbaner, .trackingBanner, .contactbaner, .teamBanner, .investorsBanner, .groupCompanyBanner, .subsidiariesBnaner, .contractlogisticsBanner  {height: 130px;}
 
 
 	
