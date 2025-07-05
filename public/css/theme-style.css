@@ -1397,7 +1397,7 @@ blockquote cite{
 .breadcrumb li + li::before {
     font-size: 12px;
     content: '/';
-    color: #fff;
+    color: #000;
     padding: 0 8px;
 }
 .breadcrumb li:nth-child(2)::before {
