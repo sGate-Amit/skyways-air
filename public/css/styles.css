@@ -1278,6 +1278,28 @@ html {
 }
 
 
+.newHeader {
+  height: 100px !important;
+  position: relative !important;
+}
+.newHeader header {
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #fff;
+}
+.allINNbanner {
+  position: relative;
+  margin: 0 0 48px;
+}
+.bannerInner {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
 
 
 /**************************************************************************/
