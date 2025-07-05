@@ -1258,7 +1258,7 @@ html {
 
 ****/
 
-.investorsBanner {
+.investorsBanner, .investorsBanner  {
 	margin: 0px !important;
 }
 
