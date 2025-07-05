@@ -1329,8 +1329,12 @@ html {
 	background: none;
 }
 
-
-
+.page-title-style02 .breadcrumb li {
+	color: #fff !important;
+}
+.page-title-style02 .breadcrumb li a {
+	color: #fff !important;
+}
 
 
 
