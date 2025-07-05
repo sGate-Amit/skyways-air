@@ -1321,9 +1321,13 @@ html {
 }
 
 
+.breadcrumb-container .breadcrumb {
+	background: none;
+}
 
-
-
+.breadcrumb-container .breadcrumb a {
+	background: none;
+}
 
 
 
