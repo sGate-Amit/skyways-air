@@ -1570,14 +1570,14 @@ h2{
 }.service-feature-box .service-body {
 	min-height: auto !important;
 }
-
+.allINNbanner img {
+	height: 130px;
+}
 
 }
 @media (max-width:400px) {
 
-.allINNbanner img {
-	height: 130px;
-}
+
 }
 
 
