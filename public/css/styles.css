@@ -1265,7 +1265,9 @@ html {
 
 
 
-
+.cuddleBanner {
+	margin: 0px !important;
+}
 
 
 #menu-navigation li:hover > ul {
