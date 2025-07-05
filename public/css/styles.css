@@ -1188,7 +1188,7 @@ html {
 	overflow-y: scroll;
 }
 
-
+/*****
 .trackingBanner {background: url(/images/tracking_banner.jpg) no-repeat !important;
 	background-size: cover !important;}
 
@@ -1254,6 +1254,12 @@ html {
 	background: url(/images/photobanner.jpg) no-repeat !important;
 	
 	background-size: cover !important;
+}
+
+****/
+
+.investorsBanner {
+	margin: 0px !important;
 }
 
 
