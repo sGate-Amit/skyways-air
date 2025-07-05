@@ -1341,7 +1341,9 @@ html {
 	color: #fff !important;
 }
 
-
+.page-title-style02 li + li::before {
+		color: #fff !important;
+}
 
 
 /**************************************************************************/
