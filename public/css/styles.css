@@ -1312,6 +1312,28 @@ html {
 	padding-bottom: 0px !important;
 	margin-bottom: 0px !important;
 }
+#myTopnav a {
+	display: block !important;
+}
+
+#myTopnav a.icon {
+	display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**************************************************************************/
 /**************************responsive************************************************/
