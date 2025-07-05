@@ -1309,7 +1309,8 @@ html {
   transform: translateY(-50%);
 }
 .paddingBottom0 {
-	padding-bottom: 40px !important;
+	padding-bottom: 0px !important;
+	margin-bottom: 0px !important;
 }
 
 /**************************************************************************/
