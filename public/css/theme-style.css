@@ -1384,7 +1384,7 @@ blockquote cite{
     list-style: none;
     float: left;
     padding: 0 0px 0 3px;
-    color: #fff;
+    color: #000;
 }
 
 .breadcrumb li a{
