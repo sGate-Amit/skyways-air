@@ -1308,8 +1308,8 @@ html {
   right: 0;
   transform: translateY(-50%);
 }
-.allINNbanner.investorsBanner {
-	margin: 0 0 40px !important;
+.paddingBottom0 {
+	padding-bottom: 40px !important;
 }
 
 /**************************************************************************/
