@@ -1388,7 +1388,7 @@ blockquote cite{
 }
 
 .breadcrumb li a{
-    color: #fff;
+    color: #000;
 }
 
 .breadcrumb li + li::before {
@@ -1424,7 +1424,7 @@ blockquote cite{
 }
 
 .breadcrumb-container .breadcrumb .active{
-    color: #fff;
+    color: #000;
 }
 
 
@@ -5242,7 +5242,7 @@ ul.blog-posts > li{
 }
 
 .copyright-container .breadcrumb li:nth-child(2)::before{
-    color: #fff;
+    color: #000;
 }
 
 #footer-wrapper.footer-light .copyright-container .breadcrumb li a{
