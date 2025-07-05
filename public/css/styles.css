@@ -1310,7 +1310,10 @@ html {
 	width: 100%;
 	
 }
-
+.nav > li > a {
+	padding-right: 8px!important;
+	padding-left: 8px!important;
+}
 .alllogoMain {
 	display: inline-block!important;
 	text-align: center!important;
