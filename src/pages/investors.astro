@@ -2107,46 +2107,47 @@ function myFunction() {
     </div>
   </div>
 
-  
   <script>
-    const modal = document.getElementById("investorModal");
-    const confirmCheck = document.getElementById("confirmCheck");
-	 const confirmCheck2 = document.getElementById("confirmCheck2");
-    const confirmBtn = document.getElementById("confirmBtn");
-    const cancelBtn = document.getElementById("cancelBtn");
-
-    // Show modal on page load
-    window.onload = () => {
-      modal.style.display = "flex";
-    };
-
-    // Enable Confirm button when checkbox is ticked
-    confirmCheck.onchange = () => {
-      confirmBtn.disabled = !confirmCheck.checked;
-    };
-	
-	confirmCheck2.onchange = () => {
-      confirmBtn.disabled = !confirmCheck2.checked;
-    };
-
-    // Proceed logic
-    confirmBtn.onclick = () => {
-      modal.style.display = "none";
-      alert("You have accepted the disclaimer.");
-      // Optionally redirect
-      // window.location.href = "investor-page.html";
-    };
-
-    // Do Not Confirm = redirect
-    cancelBtn.onclick = () => {
-      window.location.href = "https://skyways-air.in/"; // Customize your redirect
-    };
-
-    // Disable closing by outside click
-    window.onclick = function(event) {
-      // Do nothing
-    };
-  </script>
+   const modal = document.getElementById("investorModal");
+   const confirmCheck = document.getElementById("confirmCheck");
+   const confirmCheck2 = document.getElementById("confirmCheck2");
+   const confirmBtn = document.getElementById("confirmBtn");
+   const cancelBtn = document.getElementById("cancelBtn");
+ 
+   // Show modal on page load
+   window.onload = () => {
+     modal.style.display = "flex";
+     confirmBtn.disabled = true; // Ensure it's disabled initially
+   };
+ 
+   // Enable Confirm only when BOTH checkboxes are checked
+   function updateConfirmButtonState() {
+     if (confirmCheck.checked && confirmCheck2.checked) {
+       confirmBtn.disabled = false;
+     } else {
+       confirmBtn.disabled = true;
+     }
+   }
+ 
+   confirmCheck.addEventListener("change", updateConfirmButtonState);
+   confirmCheck2.addEventListener("change", updateConfirmButtonState);
+ 
+   // Confirm button click
+   confirmBtn.onclick = () => {
+     modal.style.display = "none";
+     alert("You have accepted the disclaimer.");
+     // Optional redirect:
+     // window.location.href = "investor-page.html";
+   };
+ 
+   // Cancel button click
+   cancelBtn.onclick = () => {
+     window.location.href = "https://skyways-air.in/";
+   };
+ 
+   // Disable closing modal by clicking outside (CSS handles this better)
+ </script>
+ 
 
 
 
