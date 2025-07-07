@@ -1937,7 +1937,198 @@ function myFunction() {
                <div class="clear"></div>
                
                <link rel='stylesheet' id='responsive-lightbox-gallery-css' href='/css/gallery.css' type='text/css' media='all' />
-               <style id='responsive-lightbox-gallery-inline-css' type='text/css'>
+             
+<style>
+       .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 12px;
+      max-width:720px;
+      width: 90%;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      text-align: center;
+      position: relative;
+    }
+
+    /* Remove the close icon visually */
+    .close {
+      display: none;
+    }
+
+    .modal-logo img {
+      /*width: 180px;*/
+      margin-bottom:10px;
+    }
+
+ .modal-message {
+	font-size: 15px;
+	line-height: 1.6;
+	color: #333;
+	margin-bottom: 20px;
+	overflow: scroll;
+	height: 320px;
+	padding: 20px;
+}
+.modalContent {
+	width: 800px;
+}
+
+    .modal-checkbox {
+      margin-bottom: 20px;
+      font-size: 14px;
+	  text-align:left;
+    }
+
+    .modal-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .modal-buttons button {
+      padding: 10px 20px;
+      font-size: 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .confirm-btn {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .confirm-btn:disabled {
+      background-color: #a0c5f7;
+      cursor: not-allowed;
+    }
+
+    .cancel-btn {
+      background-color: #e0e0e0;
+      color: #333;
+    }
+
+    .cancel-btn:hover {
+      background-color: #ccc;
+    }
+  </style>
+
+
+
+<!-- Modal -->
+  <div class="modal" id="investorModal">
+    <div class="modal-content" id="modalContent">
+      <!-- Close icon is hidden -->
+      <span class="close" id="closeModalBtn">&times;</span>
+
+      <!--<div class="modal-logo">
+        <img src="https://skyways-air.in/images/skywayslogo_new.png" alt="Logo">
+      </div>-->
+<h3 align="left" style="border-bottom:1px solid #ccc;padding-bottom:20px;">Disclaimer</h3>
+      <div class="modal-message" style="margin-top:0px;">
+          <div class="modalContent" style="margin-top:0px;">    
+        <h4 align="justify" style="margin-top:0px;">THESE MATERIALS ARE NOT DIRECTED AT OR INTENDED TO BE ACCESSED BY PERSONS LOCATED OUTSIDE INDIA. THESE MATERIALS ARE BEING MADE AVAILABLE ON THIS WEBSITE TO COMPLY WITH SECURITIES AND EXCHANGE BOARD OF INDIA (ISSUE OF CAPITAL AND DISCLOSURE REQUIREMENTS) REGULATIONS, 2018, AS AMENDED.</h4>
+ <h4 align="justify">IMPORTANT: You must read and agree with the terms and conditions of the following disclaimer before continuing. </h4>
+ 
+ <p align="justify">The following disclaimer applies to the draft red herring prospectus of Skyways Air Services Limited ("<strong>Company</strong>") dated June 30, 2025 ("<strong>Draft Red Herring Prospectus</strong>") filed with the Securities and Exchange Board of India ("<strong>SEBI</strong>") and hosted on this website in connection with the initial public offering of the equity shares of the Company ("<strong>Offer</strong>"). You are advised to read the following notice carefully before accessing the Draft Red Herring Prospectus. In accessing the Draft Red Herring Prospectus, you agree to be bound by the following terms and conditions, including any modifications to them from time to time.</p>
+
+ <p align="justify">The Draft Red Herring Prospectus is directed at, and is intended for distribution to, and use by, residents of India only. The information in this portion of our website, including the Draft Red Herring Prospectus, is not for publication or distribution, directly or indirectly, in or into the United States. No part of the contents of the Draft Red Herring Prospectus shall be copied or duplicated in any form by any means or redistributed. The Draft Red Herring Prospectus has been hosted on this website as prescribed under Regulation 26(1) of the Securities and Exchange Board of India (Issue of Capital and Disclosure Requirements) Regulations, 2018, as amended ("<strong>SEBI ICDR Regulations</strong>").</p>
+ 
+  <p align="justify">Our Company has taken all necessary steps to ensure that the contents of the Draft Red Herring Prospectus as appearing on this website are identical to the Draft Red Herring Prospectus filed with the SEBI. You are reminded that documents transmitted in electronic form may be altered or changed during the process of transmission and consequently, neither the Company nor any of its affiliates accepts any liability or responsibility whatsoever in respect of alterations or changes which have taken place during the course of transmission of electronic data.</p>
+  
+   <p align="justify">The equity shares have not been and will not be registered under the United States Securities Act of 1933, as amended ("<strong>U.S. Securities Act</strong>") or any other applicable law of the United States, and, unless so registered, may not be offered or sold within the United States except pursuant to an exemption from, or in a transaction not subject to, the registration requirements of the U.S. Securities Act and applicable U.S. state securities laws. Accordingly, the equity shares are being offered and sold only (a) to persons in the United States who are "qualified institutional buyers" (as defined in Rule 144A under the U.S. Securities Act and referred to in this Draft Red Herring Prospectus as "U.S. QIBs" and, for the avoidance of doubt, the term U.S. QIBs does not refer to a category of institutional investor defined under applicable Indian regulations and referred to in this Draft Red Herring Prospectus as QIBs) in transactions exempt from or not subject to the registration requirements of the U.S. Securities Act in reliance on Rule 144A and (b) outside the United States in "offshore transactions" (as defined in Regulation S) in reliance on Regulation S and the applicable laws of the jurisdiction where those offers and sales occur. The equity shares have not been and will not be registered, listed or otherwise qualified in any other jurisdiction outside India and may not be offered or sold, and bids may not be made, by persons in any such jurisdiction except in compliance with the applicable laws of such jurisdiction.</p>
+   
+   <p align="justify">Any person into whose possession the Draft Red Herring Prospectus comes is required to inform himself or herself abouts and to observe any such restrictions. Neither the Company nor any of its affiliates is soliciting any action based on the Draft Red Herring Prospectus, and it should not be construed as an offer to sell or the solicitation of an offer to buy any securities. Potential investors should not rely on the Draft Red Herring Prospectus for any investment decision.</p>
+   
+   <p align="justify">Any decision on whether to invest in the equity shares described in the Draft Red Herring Prospectus may only be made after a red herring prospectus has been filed with the Registrar of Companies, Delhi at New Delhi and the SEBI and must be made solely on the basis of such red herring prospectus, when available, as there may be material changes in the red herring prospectus compared to the Draft Red Herring Prospectus. Invitations to subscribe to or purchase the equity shares in the Offer will be made only pursuant to the red herring prospectus if the recipient is in India or the preliminary offering memorandum for the Offer, which comprises the red herring prospectus and the preliminary international wrap for the Offer, if the recipient is outside India. No person outside India is eligible to bid for equity shares in the Offer unless that person has received the preliminary offering memorandum for the Offer, which shall contain the selling restrictions for the Offer outside India.</p>
+   
+   <p align="justify">Any potential investor should note that investment in equity shares involves a high degree of risk and for details relating to such risk, please see the section titled 'Risk Factors' of the red herring prospectus, when available.</p>
+   
+    <p align="justify">Neither the Company nor any of its affiliates will be responsible for any loss or damage that could result from interception and interpretation by any third parties of any information being made available to you through this website. The Company and its affiliates cannot and do not guarantee the accuracy, timeliness or completeness of the information being made available to you in the Draft Red Herring Prospectus beyond the date of the Draft Red Herring Prospectus. The information contained in the Draft Red Herring Prospectus may not be updated since its original publication date and may not reflect the latest updates. The Company and its affiliates will not be responsible for any loss to any person or entity caused by any shortcoming, defect or inaccuracy which may have inadvertently or otherwise crept into the website. Neither the Company, any of its affiliates nor their directors, officers and employees will be liable or have any responsibility of any kind for any loss or damage that you incur in the event of any failure or disruption of this website, or resulting from the act or omission of any other party involved in making this website or the data contained therein available to you, or from any other cause relating to your access to, inability to access, or use of the website or these materials.</p>
+
+	<p align="justify">To access this information, you must confirm by pressing on the button marked 'I Confirm' that, at the time of access you are located and resident in India. If you cannot make this confirmation, you must press the button marked 'I Do Not Confirm'. The documentation contained in these pages is posted solely to comply with Indian legal and regulatory requirements. Making the information contained herein available in electronic format does not constitute an offer to sell, the solicitation of an offer to buy, or a recommendation to buy or sell securities of the Company in the United States or in any other jurisdiction, including without limitation, India.</p>
+   
+   
+   
+ 
+   </div>
+ 
+      </div>
+
+      <div class="modal-checkbox">
+        <input type="checkbox" id="confirmCheck" />
+        <label for="confirmCheck">I hereby declare that I am a resident of India, and there are no restrictions on my accessing or receiving the information contained on this website.</label>
+<br />
+		<input type="checkbox" id="confirmCheck2" />
+		<label for="confirmCheck">I have read the Legal Disclaimer and am entitled to receive information contained in this website.</label>
+		
+      </div>
+
+      <div class="modal-buttons">
+        <button class="confirm-btn" id="confirmBtn" disabled>Confirm and Proceed</button>
+        <button class="cancel-btn" id="cancelBtn">Do Not Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <script>
+    const modal = document.getElementById("investorModal");
+    const confirmCheck = document.getElementById("confirmCheck");
+	 const confirmCheck2 = document.getElementById("confirmCheck2");
+    const confirmBtn = document.getElementById("confirmBtn");
+    const cancelBtn = document.getElementById("cancelBtn");
+
+    // Show modal on page load
+    window.onload = () => {
+      modal.style.display = "flex";
+    };
+
+    // Enable Confirm button when checkbox is ticked
+    confirmCheck.onchange = () => {
+      confirmBtn.disabled = !confirmCheck.checked;
+    };
+	
+	confirmCheck2.onchange = () => {
+      confirmBtn.disabled = !confirmCheck2.checked;
+    };
+
+    // Proceed logic
+    confirmBtn.onclick = () => {
+      modal.style.display = "none";
+      alert("You have accepted the disclaimer.");
+      // Optionally redirect
+      // window.location.href = "investor-page.html";
+    };
+
+    // Do Not Confirm = redirect
+    cancelBtn.onclick = () => {
+      window.location.href = "https://www.google.com"; // Customize your redirect
+    };
+
+    // Disable closing by outside click
+    window.onclick = function(event) {
+      // Do nothing
+    };
+  </script>
+
+
+
+
+
+			 <style id='responsive-lightbox-gallery-inline-css' type='text/css'>
                   :root {
                   --rl-gallery-background_color: #000000;
                   --rl-gallery-background_opacity: 0.8;
